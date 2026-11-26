@@ -1,0 +1,2519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vyapini Tech Services — 10 Years of InfinITe Possibilities</title>
+<meta name="description" content="Vyapini Tech Services Pvt Ltd — IT consultancy, cloud, security and analytics solutions. Celebrating 10 years of trusted technology partnership." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --brand:#0c2442;
+  --brand-hover:#173a66;
+  --brand-3:#d5deee;
+  --brand-tint:#e6ebf4;
+  --accent:#3d5f8f;
+  --ink:#061428;
+  --ink-2:#0c2442;
+  --light-1:#29363d;
+  --light-2:#656b8a;
+  --light-3:#8f96bd;
+  --border:#e8e4d8;
+  --border-2:#ddd8c9;
+  --section-light:#f7f4ec;
+  --input-bg:#f7f4ec;
+  --input-border:#ddd8c9;
+  --input-border-active:#b9b3a3;
+  --cool-gray:#eceff1;
+  --white:#fdfbf6;
+  --card:#fffdf8;
+
+  --cta-radius:100px;
+  --r-4:4px;
+  --r-8:8px;
+  --r-18:18px;
+
+  --page-pad:56px;
+  --maxw:1440px;
+  --content:1200px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--white);color:var(--ink);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:16px;line-height:1.2;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none;margin:0;padding:0}
+button{font-family:inherit}
+p{margin:0;color:var(--light-2);line-height:1.55}
+
+h1,h2,h3,h4{margin:0;font-weight:500;color:var(--ink)}
+h1{font-size:clamp(44px,6.2vw,80px);line-height:1.05;letter-spacing:-.06em}
+.h-lg{font-size:clamp(32px,4.2vw,52px);line-height:1.07;letter-spacing:-.05em}
+.h-sm{font-size:clamp(22px,2.4vw,28px);line-height:1.2;letter-spacing:-.05em}
+h4{font-size:18px;line-height:1.3;letter-spacing:-.02em}
+
+.wrap{max-width:var(--content);margin:0 auto;padding:0 var(--page-pad)}
+section{padding:120px 0}
+.sec-light{background:var(--section-light);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-size:14px;font-weight:500;line-height:1.71;
+  padding:9px 22px;border-radius:var(--cta-radius);border:1px solid transparent;
+  cursor:pointer;transition:background .15s,border-color .15s,color .15s;white-space:nowrap;
+}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-hover)}
+.btn-secondary{background:var(--card);color:var(--ink);border-color:var(--border-2)}
+.btn-secondary:hover{border-color:var(--input-border-active);background:var(--section-light)}
+.btn-onbrand{background:var(--card);color:var(--brand)}
+.btn-onbrand:hover{background:var(--brand-3)}
+.btn-lg{font-size:15px;padding:12px 28px}
+
+.tlink{display:inline-flex;align-items:center;gap:6px;color:var(--brand);font-size:15px;font-weight:500}
+.tlink:hover{color:var(--brand-hover)}
+.tlink svg{transition:transform .15s}
+.tlink:hover svg{transform:translateX(3px)}
+
+.eyebrow{font-size:15px;font-weight:500;color:var(--brand);letter-spacing:-.01em;margin-bottom:12px;display:block}
+.sec-head{max-width:640px;margin-bottom:56px}
+.sec-head p{margin-top:16px;font-size:17px}
+.sec-head .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+
+.announce{display:none}
+
+/* ---------- section banner image ---------- */
+.section-banner{
+  width:100%;
+  max-width:var(--content);
+  margin:0 auto 56px;
+  padding:0 var(--page-pad);
+}
+.section-banner-inner{
+  position:relative;
+  border-radius:var(--r-18);
+  overflow:hidden;
+  background:linear-gradient(135deg,#e9eef7 0%,#f7f4ec 100%);
+  border:1px solid var(--border);
+  box-shadow:0 24px 60px -30px rgba(12,36,66,.35), 0 4px 12px rgba(3,6,40,.04);
+  aspect-ratio:21/8;
+}
+.section-banner-inner img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform 1.2s cubic-bezier(.22,.9,.3,1);
+}
+.section-banner-inner:hover img{ transform:scale(1.03); }
+
+.section-banner-inner::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, transparent 55%, rgba(3,6,40,.45) 100%);
+  pointer-events:none;
+}
+
+.banner-tag{
+  position:absolute;
+  bottom:20px;
+  left:24px;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  border:1px solid var(--border);
+  border-radius:100px;
+  padding:7px 16px;
+  font-size:13px;
+  font-weight:500;
+  color:var(--brand);
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  box-shadow:0 8px 20px -10px rgba(3,6,40,.15);
+  z-index:2;
+}
+.banner-tag .dot{
+  width:7px;height:7px;border-radius:50%;
+  background:var(--brand);
+  box-shadow:0 0 0 3px rgba(12,36,66,.18);
+  animation:pulseDot 1.8s ease-in-out infinite;
+}
+@keyframes pulseDot{
+  0%,100%{ transform:scale(1); opacity:1; }
+  50%{ transform:scale(1.25); opacity:.7; }
+}
+@media (prefers-reduced-motion:reduce){
+  .banner-tag .dot{ animation:none!important; }
+}
+
+/* ---------- header ---------- */
+.nav-outer{
+  position:sticky;top:0;z-index:60;
+  background:var(--white);
+  border-bottom:1px solid var(--border);
+  box-shadow:none;
+  overflow:hidden;
+  transition:background .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+.nav-outer.scrolled{
+  background:var(--brand);
+  border-bottom-color:transparent;
+  box-shadow:0 2px 10px rgba(3,6,40,.10);
+}
+.nav{
+  position:relative;
+  z-index:3;
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:0 var(--page-pad);
+  height:120px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+
+.nav-outer{
+  --lpad:32px;
+  --e:max(0px, calc((100vw - var(--maxw)) / 2));
+}
+.nav-logo{
+  display:flex;align-items:center;justify-content:center;
+  align-self:flex-start;
+  height:100%;
+  padding:0 var(--lpad);
+  margin-left:calc(-1 * var(--lpad));
+  position:relative;
+  z-index:2;
+  background:transparent;
+  border-radius:0 0 0 0;
+  box-shadow:0 0 0 rgba(3,6,40,0);
+  transition:height .35s ease, padding .35s ease, margin .35s ease, background .35s ease,
+             border-radius .35s ease, box-shadow .35s ease;
+}
+.nav-logo img{
+  height:100px;width:auto;
+}
+.nav-outer.scrolled .nav-logo{
+  height:100%;
+  margin-left:calc(-1 * (var(--page-pad) + var(--e)));
+  padding-left:calc((var(--lpad) + var(--page-pad) + var(--e)) / 2);
+  padding-right:calc((var(--lpad) + var(--page-pad) + var(--e)) / 2);
+  background:var(--white);
+  border-radius:0 0 90px 0;
+}
+.logo-wrap{position:relative;display:block;line-height:0}
+
+.nav-mid{display:flex;align-items:center;gap:4px}
+.nav-mid a{
+  padding:8px 14px;border-radius:var(--r-8);
+  font-size:15px;font-weight:500;
+  color:var(--ink-2);
+  transition:color .15s,background .15s;
+}
+.nav-mid a:hover{color:var(--brand);background:var(--brand-tint)}
+.nav-outer.scrolled .nav-mid a{color:rgba(255,255,255,.88)}
+.nav-outer.scrolled .nav-mid a:hover{color:#fff;background:rgba(255,255,255,.14)}
+
+.nav-right{display:flex;align-items:center;gap:8px}
+.nav-right .signin{font-size:15px;font-weight:500;color:var(--ink-2);padding:8px 12px}
+.nav-right .signin:hover{color:var(--brand-hover)}
+.nav-outer.scrolled .nav-right .signin{color:rgba(255,255,255,.88)}
+.nav-outer.scrolled .nav-right .signin:hover{color:#fff}
+.nav-outer.scrolled .nav-right .btn-primary{background:var(--card);color:var(--brand);border-color:transparent}
+.nav-outer.scrolled .nav-right .btn-primary:hover{background:var(--brand-3);color:var(--brand-hover)}
+
+.burger{
+  display:none;width:40px;height:40px;
+  border:1px solid var(--border-2);
+  border-radius:var(--r-8);
+  background:transparent;
+  align-items:center;justify-content:center;cursor:pointer;
+}
+.burger span{display:block;width:16px;height:1.5px;background:var(--brand);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:var(--brand)}
+.burger span::before{top:-5px}.burger span::after{top:5px}
+.nav-outer.scrolled .burger{border-color:rgba(255,255,255,.35)}
+.nav-outer.scrolled .burger span,
+.nav-outer.scrolled .burger span::before,
+.nav-outer.scrolled .burger span::after{background:#fff}
+
+.mobile-menu{
+  display:none;
+  border-top:1px solid var(--border);
+  background:var(--white);
+  padding:12px var(--page-pad) 20px;
+  position:relative;z-index:1;
+}
+.mobile-menu.open{display:block}
+.mobile-menu a{
+  display:block;padding:12px 0;
+  font-size:16px;font-weight:500;
+  color:var(--ink-2);
+  border-bottom:1px solid var(--border);
+}
+.mobile-menu a:last-child{border-bottom:none}
+.nav-outer.scrolled .mobile-menu{background:var(--brand);border-top-color:rgba(255,255,255,.15)}
+.nav-outer.scrolled .mobile-menu a{color:#fff;border-bottom-color:rgba(255,255,255,.15)}
+
+
+/* ---------- hero video banner ---------- */
+.hero-video{position:relative;width:100%;background:var(--brand);line-height:0;overflow:hidden}
+.hero-video video{display:block;width:100%;height:auto;aspect-ratio:1920/860;max-height:calc(100vh - 120px);object-fit:cover;background:#0a2a54}
+@media (max-aspect-ratio:5/4){.hero-video video{aspect-ratio:4/5;max-height:none}}
+@media (orientation:landscape) and (max-height:520px){.hero-video video{max-height:none}}
+.vctl{position:absolute;right:28px;bottom:24px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(6,20,40,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .15s,border-color .15s;line-height:0}
+.vctl:hover{background:rgba(255,255,255,.18);border-color:#fff}
+.vctl svg{width:16px;height:16px;fill:currentColor}
+.vctl .i-play{display:none}
+.vctl.paused .i-play{display:block}
+.vctl.paused .i-pause{display:none}
+@media(max-width:640px){.vctl{right:14px;bottom:14px;width:38px;height:38px}}
+
+/* ---------- hero ---------- */
+.hero{padding:72px 0 96px}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;max-width:var(--content);margin:0 auto;padding:0 var(--page-pad)}
+.hero p.lede{font-size:19px;line-height:1.5;margin:24px 0 0;max-width:460px}
+
+/* ---------- hero panel ---------- */
+.panel{
+  position:relative;height:460px;overflow:hidden;
+  -webkit-mask-image:linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent);
+  mask-image:linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent);
+}
+.panel::before{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(90deg,
+    rgba(12,36,66,.10) 0 6px,
+    rgba(12,36,66,.02) 6px 14px);
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 40%,transparent 78%);
+  mask-image:radial-gradient(ellipse at center,#000 40%,transparent 78%);
+  pointer-events:none;
+  opacity:0;
+  transition:opacity .8s ease;
+}
+.panel.ready::before{opacity:1}
+
+.panel-track{
+  position:relative;
+  display:flex;flex-direction:column;gap:14px;
+  padding:24px 0;
+  transition:transform .9s cubic-bezier(.5,.05,.2,1);
+  will-change:transform;
+}
+
+.panel-row{
+  display:flex;align-items:center;gap:16px;
+  padding:16px 22px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  box-shadow:0 10px 24px -12px rgba(3,6,40,.12), 0 2px 6px rgba(3,6,40,.04);
+  transition:box-shadow .4s ease, border-color .4s ease, transform .4s ease,
+             opacity .55s ease;
+  opacity:0;
+  transform:scale(.94);
+}
+.panel.ready .panel-row{
+  opacity:1;
+  transform:scale(1);
+  animation:popIn .55s cubic-bezier(.34,1.56,.64,1) backwards;
+}
+.panel-row:nth-child(1){animation-delay:.00s}
+.panel-row:nth-child(2){animation-delay:.08s}
+.panel-row:nth-child(3){animation-delay:.16s}
+.panel-row:nth-child(4){animation-delay:.24s}
+.panel-row:nth-child(5){animation-delay:.32s}
+.panel-row:nth-child(6){animation-delay:.40s}
+.panel-row:nth-child(7){animation-delay:.48s}
+.panel-row:nth-child(8){animation-delay:.56s}
+.panel-row:nth-child(9){animation-delay:.64s}
+.panel-row:nth-child(10){animation-delay:.72s}
+.panel-row:nth-child(11){animation-delay:.80s}
+.panel-row:nth-child(12){animation-delay:.88s}
+.panel-row:nth-child(13){animation-delay:.96s}
+.panel-row:nth-child(14){animation-delay:1.04s}
+.panel-row:nth-child(15){animation-delay:1.12s}
+.panel-row:nth-child(16){animation-delay:1.20s}
+
+@keyframes popIn{
+  0%   { opacity:0; transform:scale(.94) translateY(8px); }
+  60%  { opacity:1; transform:scale(1.02) translateY(-2px); }
+  100% { opacity:1; transform:scale(1) translateY(0); }
+}
+
+.panel-row:nth-child(odd){margin-left:32px;margin-right:0}
+.panel-row:nth-child(even){margin-left:0;margin-right:32px}
+
+.panel-row.active{
+  transform:scale(1.03);
+  box-shadow:0 20px 40px -16px rgba(12,36,66,.35), 0 4px 10px rgba(3,6,40,.05);
+  border-color:var(--brand-3);
+}
+
+.panel-row .nm{font-size:15px;font-weight:500;color:var(--ink);flex:1;transition:color .4s ease}
+
+.toggle{
+  width:38px;height:22px;border-radius:var(--cta-radius);
+  background:#e2e4ee;position:relative;flex:none;
+  transition:background .4s ease;
+}
+.toggle::after{
+  content:"";position:absolute;top:3px;left:3px;
+  width:16px;height:16px;border-radius:50%;background:#fff;
+  box-shadow:0 1px 2px rgba(0,0,0,.15);
+  transition:transform .4s cubic-bezier(.4,1.4,.6,1);
+}
+.panel-row .st{
+  font-size:12px;font-weight:500;
+  padding:4px 12px;border-radius:var(--cta-radius);
+  background:#f1f0ea;color:var(--light-3);
+  transition:background .4s ease,color .4s ease;
+  min-width:74px;text-align:center;
+}
+.panel-row.on .toggle{background:var(--brand)}
+.panel-row.on .toggle::after{transform:translateX(16px)}
+.panel-row.on .st{background:#e7f6ec;color:#1a7f4b}
+.panel-row.on .nm{color:var(--ink-2)}
+
+/* ---------- trusted by ---------- */
+.trusted{padding:0 0 96px}
+.trusted-lbl{font-size:14px;color:var(--light-3);text-align:center;margin-bottom:28px}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee-track{display:flex;gap:68px;width:max-content;align-items:center;padding:8px 0}
+.marquee-track.ltr{animation:mqLeft 60s linear infinite}
+.marquee-track.rtl{animation:mqRight 60s linear infinite}
+@keyframes mqLeft{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes mqRight{0%{transform:translateX(-50%)}100%{transform:translateX(0)}}
+.marquee-track img{height:44px;width:auto;max-width:200px;object-fit:contain;filter:none;opacity:1;transition:transform .2s}
+@media(max-width:640px){.marquee-track{gap:48px}.marquee-track img{height:36px;max-width:150px}}
+.marquee-track img:hover{transform:scale(1.06)}
+.marquee:hover .marquee-track{animation-play-state:paused}
+
+.card-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  background:transparent;border:1px solid var(--border);
+  border-radius:var(--r-18);overflow:hidden;
+}
+.fcard{
+  background:var(--card);padding:32px 28px;transition:background .15s;
+  border-right:1px solid var(--border);border-bottom:1px solid var(--border);
+}
+.fcard:hover{background:var(--section-light)}
+.fcard .ico{width:40px;height:40px;border-radius:var(--r-8);background:var(--brand-tint);color:var(--brand);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.fcard h4{margin-bottom:8px}
+.fcard p{font-size:15px}
+.fcard.hide{display:none}
+.fcard ul{display:grid;gap:8px;margin-top:4px}
+.fcard li{position:relative;padding-left:16px;font-size:14px;line-height:1.45;color:var(--light-2)}
+.fcard li::before{content:"";position:absolute;left:0;top:7px;width:5px;height:5px;border-radius:50%;background:var(--brand)}
+
+
+/* services grid: cards in the last row stretch to fill the row (no empty cells) */
+#cardGrid{display:flex;flex-wrap:wrap;gap:0}
+#cardGrid .fcard{flex:1 1 31%;min-width:0}
+@media(max-width:1080px){#cardGrid .fcard{flex-basis:46%}}
+@media(max-width:640px){#cardGrid .fcard{flex-basis:100%}}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
+.pills button{
+  font-size:14px;font-weight:500;padding:8px 18px;border-radius:var(--cta-radius);
+  background:var(--card);border:1px solid var(--border-2);color:var(--light-2);cursor:pointer;transition:all .15s;
+}
+.pills button:hover{border-color:var(--input-border-active);color:var(--ink)}
+.pills button.active{background:var(--brand);border-color:var(--brand);color:#fff}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.checklist{display:grid;gap:18px;margin-top:8px}
+.checklist li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--light-2);line-height:1.5}
+.checklist .ck{flex:none;width:20px;height:20px;border-radius:50%;background:var(--brand-tint);color:var(--brand);display:flex;align-items:center;justify-content:center;margin-top:1px}
+
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border);border-radius:var(--r-18);overflow:hidden;background:var(--border);gap:1px}
+.stat{background:var(--card);padding:36px 28px}
+.stat .n{font-size:clamp(34px,4vw,52px);font-weight:500;letter-spacing:-.05em;color:var(--ink);line-height:1}
+.stat .n span{color:var(--brand)}
+.stat .l{margin-top:10px;font-size:15px;color:var(--light-2)}
+
+/* stat boxes: turn brand blue on hover / touch / click */
+.stat{cursor:pointer;transition:background .25s ease}
+.stat .n,.stat .n span,.stat .l{transition:color .25s ease}
+.stat:hover,.stat:active,.stat.is-active{background:var(--brand)}
+.stat:hover .n,.stat:active .n,.stat.is-active .n{color:#fff}
+.stat:hover .n span,.stat:active .n span,.stat.is-active .n span{color:var(--brand-3)}
+.stat:hover .l,.stat:active .l,.stat.is-active .l{color:rgba(255,255,255,.85)}
+
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--r-18);overflow:hidden}
+.step{background:var(--card);padding:28px 24px}
+.step .n{font-size:14px;font-weight:500;color:var(--brand);margin-bottom:14px}
+.step h4{font-size:16px;margin-bottom:8px}
+.step p{font-size:14px}
+
+.contact-grid{display:grid;grid-template-columns:1fr;gap:24px;max-width:640px;margin:0 auto}
+.cbox{border:1px solid var(--border);border-radius:var(--r-18);padding:36px 32px;background:var(--card)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.field.full{grid-column:1/-1}
+.field label{display:block;font-size:14px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.field input,.field textarea{
+  width:100%;font-family:inherit;font-size:15px;color:var(--ink);
+  padding:11px 13px;border-radius:var(--r-4);
+  background:var(--input-bg);border:1px solid var(--input-border);
+  transition:border-color .15s,background .15s,box-shadow .15s;
+}
+.field textarea{resize:vertical;min-height:110px;line-height:1.5}
+.field input::placeholder,.field textarea::placeholder{color:var(--light-3)}
+.field input:focus,.field textarea:focus{outline:none;background:var(--card);border-color:var(--input-border-active);box-shadow:0 0 0 3px var(--brand-tint)}
+
+footer{background:var(--section-light);border-top:1px solid var(--border);padding:72px 0 0}
+.fcols{display:grid;grid-template-columns:1.4fr repeat(2,1fr);gap:40px;padding-bottom:56px}
+.fbrand img{height:100px;margin-bottom:20px}
+.fbrand p{font-size:15px;max-width:300px}
+.fcol h5{font-size:15px;font-weight:500;color:var(--ink);margin:0 0 18px}
+.fcol li{margin-bottom:11px}
+.fcol a{font-size:15px;color:var(--light-2)}
+.fcol a:hover{color:var(--brand)}
+.fbot{border-top:1px solid var(--border);padding:22px 0 32px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.fbot p{font-size:14px;color:var(--light-3)}
+
+/* Footer social links */
+.fsocial{display:flex;gap:10px;margin-top:20px}
+.fsocial a{
+  width:36px;height:36px;border-radius:var(--r-8);
+  background:var(--card);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--light-2);
+  transition:background .15s,color .15s,border-color .15s;
+}
+.fsocial a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+.fsocial svg{width:16px;height:16px;fill:currentColor}
+
+#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(140%);background:var(--ink);color:#fff;padding:12px 22px;border-radius:var(--r-8);font-size:14px;font-weight:500;transition:transform .3s;z-index:100}
+#toast.show{transform:translateX(-50%) translateY(0)}
+
+@media(max-width:1080px){
+  :root{--page-pad:32px}
+  .hero-grid,.split{grid-template-columns:1fr;gap:48px}
+  .card-grid{grid-template-columns:repeat(2,1fr)!important}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:1fr}
+  .fcols{grid-template-columns:1fr 1fr}
+  section{padding:88px 0}
+  .section-banner-inner{aspect-ratio:16/7}
+}
+@media(max-width:800px){
+  .nav-mid,.nav-right .signin{display:none}
+  .burger{display:flex}
+  .nav{height:100px}
+  .nav-outer{--lpad:24px}
+  .nav-logo img{height:76px}
+  .nav-outer.scrolled .nav-logo{padding-bottom:4px;border-radius:0 0 70px 0}
+  .nav-right{gap:4px}
+  .nav-right .btn-primary{padding:7px 16px;font-size:13px}
+}
+@media(max-width:640px){
+  :root{--page-pad:20px}
+  .card-grid,.steps,.stats{grid-template-columns:1fr!important}
+  .fgrid{grid-template-columns:1fr}
+  .fcols{grid-template-columns:1fr;gap:32px}
+  .cta{padding:40px 28px}
+  .hero{padding:48px 0 64px}
+  section{padding:64px 0}
+  .panel{height:400px}
+  .panel-row:nth-child(odd),
+  .panel-row:nth-child(even){margin-left:0;margin-right:0}
+  .section-banner{margin-bottom:36px}
+  .section-banner-inner{aspect-ratio:16/9}
+  .banner-tag{left:14px;bottom:14px;font-size:12px;padding:6px 13px}
+  .nav{height:88px}
+  .nav-outer{--lpad:20px}
+  .nav-logo img{height:64px}
+  .nav-outer.scrolled .nav-logo{padding-bottom:4px;border-radius:0 0 60px 0}
+  .nav-right .btn-primary{padding:6px 12px;font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .marquee-track{animation:none!important}
+  .panel-track{transition:none!important}
+  .panel-row{opacity:1!important;transform:none!important;animation:none!important}
+  .panel::before{opacity:1!important}
+  .tlink:hover svg{transform:none}
+}
+
+/* ---------- intro splash (plain white) ---------- */
+#intro{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background:#ffffff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  transition:opacity .9s ease, visibility .9s ease;
+}
+#intro.hide{
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+}
+
+#intro::before,
+#intro::after,
+.intro-grid,
+.intro-sweep{
+  display:none;
+}
+
+.intro-inner{
+  position:relative;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  padding:0 24px;
+  max-width:900px;
+  animation:introIn 1.4s cubic-bezier(.22,.9,.3,1) .15s forwards;
+  opacity:0;
+  transform:scale(.9);
+}
+#intro.hide .intro-inner{
+  animation:introOut .9s cubic-bezier(.6,0,.4,1) forwards;
+}
+
+.intro-inner img{
+  width:min(32vw, 320px);
+  height:auto;
+}
+
+.intro-inner .divider{
+  width:56px;
+  height:2px;
+  background:var(--brand);
+  opacity:.35;
+  margin:28px 0 24px;
+  border-radius:2px;
+  animation:dividerGrow .9s cubic-bezier(.5,.05,.2,1) .9s forwards;
+  transform:scaleX(0);
+  transform-origin:center;
+}
+@keyframes dividerGrow{
+  to{ transform:scaleX(1); }
+}
+
+.intro-inner .intro-title{
+  font-size:clamp(22px, 3.4vw, 42px);
+  line-height:1.1;
+  font-weight:500;
+  letter-spacing:-.04em;
+  color:var(--brand);
+  margin:0;
+  opacity:0;
+  transform:translateY(12px);
+  animation:introTextIn .9s cubic-bezier(.22,.9,.3,1) 1.05s forwards;
+}
+@keyframes introTextIn{
+  to{ opacity:1; transform:translateY(0); }
+}
+
+@keyframes introIn{
+  0%   { opacity:0; transform:scale(.9) translateY(10px); }
+  60%  { opacity:1; transform:scale(1.02) translateY(0); }
+  100% { opacity:1; transform:scale(1) translateY(0); }
+}
+@keyframes introOut{
+  0%   { opacity:1; transform:scale(1); }
+  100% { opacity:0; transform:scale(1.18); }
+}
+
+body.intro-lock{overflow:hidden;}
+
+@media(prefers-reduced-motion:reduce){
+  #intro .intro-inner,
+  .intro-inner .divider,
+  .intro-inner .intro-title{
+    animation:none!important;
+    opacity:1!important;
+    transform:none!important;
+  }
+}
+
+/* ---------- scroll reveal ---------- */
+.js-reveal:not(.rv-fail) .rv{
+  opacity:0;transform:translateY(36px);
+  transition:opacity .9s cubic-bezier(.22,.9,.3,1),transform .9s cubic-bezier(.22,.9,.3,1);
+  transition-delay:var(--d,0s);
+  will-change:opacity,transform;
+}
+.js-reveal:not(.rv-fail) .rv.rv-left{transform:translateX(-48px)}
+.js-reveal:not(.rv-fail) .rv.rv-right{transform:translateX(48px)}
+.js-reveal:not(.rv-fail) .rv.rv-zoom{transform:translateY(40px) scale(.96)}
+.js-reveal:not(.rv-fail) .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .js-reveal .rv{opacity:1!important;transform:none!important;transition:none!important}
+}
+
+/* =============================================
+   SERVICES LAYOUT
+   ============================================= */
+
+/* --- 1. ALL SERVICES (5 items: top2, center1, bottom2) --- */
+.svc-core-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--r-18);
+  overflow: hidden;
+}
+.svc-core-item {
+  background: var(--card);
+  padding: 28px 24px;
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: background .15s;
+}
+.svc-core-item { cursor: pointer; transition: background .25s ease; }
+.svc-core-item.center-item {
+  flex: 1 1 100%;
+  text-align: center;
+  align-items: center;
+  padding: 18px 24px;
+  gap: 4px;
+}
+.svc-core-item .ico-wrap {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--brand-tint);
+  color: var(--brand);
+  display: flex; align-items: center; justify-content: center;
+  flex: none;
+}
+.svc-core-item .ico-wrap svg { width: 24px; height: 24px; }
+.svc-core-item h4 { font-size: 17px; margin-bottom: 2px; }
+.svc-core-item p { font-size: 14px; max-width: 520px; margin: 0 auto; line-height: 1.5; }
+
+.svc-core-item.center-item .ico-wrap {
+  width: 40px; height: 40px;
+  margin-bottom: 0;
+}
+.svc-core-item.center-item .ico-wrap svg { width: 20px; height: 20px; }
+.svc-core-item.center-item h4 { font-size: 17px; margin-bottom: 0; }
+.svc-core-item.center-item p { font-size: 14px; }
+
+@media(max-width: 800px) {
+  .svc-core-item { flex: 1 1 100%; text-align: center; align-items: center; padding: 24px 20px; }
+  .svc-core-item p { max-width: 100%; }
+  .svc-core-item.center-item { padding: 20px; }
+}
+
+.svc-core-item .ico-wrap { transition: background .25s ease, color .25s ease; }
+.svc-core-item h4, .svc-core-item p { transition: color .25s ease; }
+.svc-core-item:hover, .svc-core-item:active, .svc-core-item:focus-within { background: var(--brand); }
+.svc-core-item:hover h4, .svc-core-item:active h4 { color: #fff; }
+.svc-core-item:hover p, .svc-core-item:active p { color: rgba(255,255,255,.85); }
+.svc-core-item:hover .ico-wrap, .svc-core-item:active .ico-wrap { background: var(--card); color: var(--brand); }
+
+
+/* --- 2. BY TECHNOLOGY & BY COMPETENCY (feature rows: icon + ribbon + bullets  |  illustration) --- */
+.sf-badge{
+  display:table;
+  margin:0 auto 44px;
+  padding:9px 28px;
+  border-radius:var(--r-4);
+  background:var(--brand);
+  color:#fff;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  box-shadow:0 10px 22px -12px rgba(12,36,66,.6);
+}
+.sf-list{
+  display:grid;
+  gap:0;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--r-18);
+  padding:56px 52px;
+  box-shadow:0 24px 60px -34px rgba(12,36,66,.28), 0 4px 12px rgba(3,6,40,.03);
+}
+.sf-row + .sf-row{
+  margin-top:56px;
+  padding-top:56px;
+  border-top:1px solid var(--border);
+}
+.sf-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:48px;
+  align-items:center;
+}
+.sf-row.reverse .sf-art{order:-1}
+
+.sf-card{ --c1:#0c2442; --c2:#d5deee; }
+.sf-card.purple{ --c1:#0c2442; --c2:#d5deee; }
+.sf-card.green { --c1:#3d5f8f; --c2:#d5deee; }
+.sf-card.red   { --c1:#0c2442; --c2:#d5deee; }
+.sf-card.blue  { --c1:#3d5f8f; --c2:#d5deee; }
+
+.sf-head{
+  position:relative;
+  display:flex;
+  align-items:center;
+  height:104px;
+  margin-bottom:22px;
+}
+.sf-circle{
+  position:relative;
+  z-index:2;
+  flex:none;
+  width:104px;height:104px;
+  border-radius:50%;
+  background:var(--c1);
+  border:5px solid #fff;
+  box-shadow:0 0 0 3px var(--c1), 0 14px 26px -12px rgba(3,6,40,.45);
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;
+}
+.sf-circle svg{width:48px;height:48px}
+.sf-ribbon{
+  position:absolute;
+  left:52px;right:0;
+  top:50%;
+  transform:translateY(-50%);
+  height:70px;
+  padding:26px 28px 0 76px;
+  background:linear-gradient(180deg, var(--c1) 0 36%, var(--c2) 36% 100%);
+  clip-path:polygon(0 0,100% 0,93% 100%,0 100%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.sf-ribbon h4{
+  font-size:17px;
+  font-weight:600;
+  line-height:1.2;
+  letter-spacing:-.01em;
+  color:var(--ink);
+  margin-top:-4px;
+}
+.sf-bullets{display:grid;gap:9px;padding-left:6px}
+.sf-bullets li{
+  position:relative;
+  padding-left:18px;
+  font-size:15px;
+  line-height:1.45;
+  color:var(--light-1);
+}
+.sf-bullets li::before{
+  content:"";
+  position:absolute;left:0;top:8px;
+  width:6px;height:6px;border-radius:50%;
+  background:var(--c1);
+}
+
+.sf-art{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.sf-art svg,.sf-art img{
+  width:100%;
+  max-width:430px;
+  height:auto;
+  filter:drop-shadow(0 22px 24px rgba(12,36,66,.18));
+  transition:transform .6s cubic-bezier(.22,.9,.3,1);
+}
+.sf-row:hover .sf-art svg,.sf-row:hover .sf-art img{transform:translateY(-6px) scale(1.02)}
+
+.svc-block { display: none; }
+.svc-block.active { display: block; }
+
+@media(max-width:900px){
+  .sf-row{grid-template-columns:1fr;gap:28px}
+  .sf-row.reverse .sf-art{order:0}
+  .sf-art{order:2}
+  .sf-list{padding:36px 24px}
+  .sf-row + .sf-row{margin-top:40px;padding-top:40px}
+}
+@media(max-width:480px){
+  .sf-list{padding:28px 16px}
+  .sf-head{height:88px}
+  .sf-circle{width:88px;height:88px}
+  .sf-circle svg{width:40px;height:40px}
+  .sf-ribbon{left:44px;height:62px;padding:22px 18px 0 62px}
+  .sf-ribbon h4{font-size:15px}
+}
+
+/* =============================================
+   WHY-US CARDS & PROCESS STEPS:
+   turn brand blue on hover / touch / click
+   (placed last so it overrides the earlier .fcard:hover rule)
+   ============================================= */
+.fcard,.step{cursor:pointer;transition:background .25s ease}
+.fcard h4,.fcard p,.fcard li,
+.step .n,.step h4,.step p,
+.fcard .ico{transition:color .25s ease,background .25s ease}
+
+.fcard:hover,.fcard:active,.fcard.is-active,
+.step:hover,.step:active,.step.is-active{background:var(--brand)}
+
+.fcard:hover h4,.fcard:active h4,.fcard.is-active h4,
+.step:hover h4,.step:active h4,.step.is-active h4{color:#fff}
+
+.fcard:hover p,.fcard:active p,.fcard.is-active p,
+.step:hover p,.step:active p,.step.is-active p{color:rgba(255,255,255,.85)}
+
+.fcard:hover li,.fcard:active li,.fcard.is-active li{color:rgba(255,255,255,.85)}
+
+.step:hover .n,.step:active .n,.step.is-active .n{color:var(--brand-3)}
+
+.fcard:hover .ico,.fcard:active .ico,.fcard.is-active .ico{background:var(--card);color:var(--brand)}
+
+/* =============================================
+   BY TECHNOLOGY / BY COMPETENCY: click-to-expand services
+   ============================================= */
+.sf-headline{font-size:clamp(20px,2vw,24px);line-height:1.2;letter-spacing:-.03em;font-weight:500;margin:0 0 10px}
+.sf-intro{font-size:15px;line-height:1.55;color:var(--light-2)}
+.sf-acc{display:grid;gap:10px;margin-top:22px}
+.sf-item{
+  border:1px solid var(--border-2);border-radius:var(--r-8);background:var(--card);overflow:hidden;
+  transition:border-color .25s ease, box-shadow .25s ease;
+}
+.sf-item.open{border-color:var(--c1);box-shadow:0 16px 32px -22px rgba(12,36,66,.5)}
+.sf-trigger{
+  width:100%;display:flex;align-items:center;gap:12px;
+  padding:11px 14px;margin:0;border:0;background:transparent;cursor:pointer;
+  font:inherit;font-size:15px;font-weight:500;line-height:1.35;color:var(--ink);text-align:left;
+  transition:background .25s ease,color .25s ease;
+}
+.sf-trigger:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sf-ic{
+  flex:none;width:34px;height:34px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--brand-tint);color:var(--c1);
+  transition:background .25s ease,color .25s ease;
+}
+.sf-ic svg{width:18px;height:18px}
+.sf-t{flex:1;min-width:0}
+.sf-chev{flex:none;width:18px;height:18px;display:flex;color:var(--light-3);transition:transform .3s ease,color .25s ease}
+.sf-chev svg{width:18px;height:18px}
+.sf-item.open .sf-trigger,
+.sf-item.open .sf-trigger:focus-visible{background:var(--c1);color:#fff}
+.sf-item.open .sf-ic{background:var(--card);color:var(--c1)}
+.sf-item.open .sf-chev{transform:rotate(180deg);color:#fff}
+@media (hover:hover){
+  .sf-trigger:hover{background:var(--c1);color:#fff}
+  .sf-trigger:hover .sf-ic{background:var(--card);color:var(--c1)}
+  .sf-trigger:hover .sf-chev{color:#fff}
+}
+.sf-panel{
+  display:grid;grid-template-rows:0fr;visibility:hidden;
+  transition:grid-template-rows .35s ease, visibility 0s linear .35s;
+}
+.sf-item.open .sf-panel{grid-template-rows:1fr;visibility:visible;transition-delay:0s}
+.sf-panel-in{overflow:hidden;min-height:0}
+.sf-pbody{padding:18px 20px 20px;border-top:1px solid var(--border)}
+.sf-lead{font-size:15px;line-height:1.6;color:var(--light-1)}
+.sf-full{font-size:14.5px;line-height:1.6;color:var(--light-2);margin-top:10px}
+.sf-lbl{display:block;margin:20px 0 10px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--c1)}
+.sf-deliver{display:grid;gap:9px}
+.sf-deliver li{position:relative;padding-left:28px;font-size:14.5px;line-height:1.5;color:var(--light-1)}
+.sf-deliver li strong{font-weight:600;color:var(--ink)}
+.sf-deliver li::before{content:"";position:absolute;left:0;top:1px;width:18px;height:18px;border-radius:50%;background:var(--brand-tint)}
+.sf-deliver li::after{
+  content:"";position:absolute;left:6.5px;top:5px;width:4px;height:8px;
+  border:solid var(--c1);border-width:0 2px 2px 0;transform:rotate(45deg);
+}
+.sf-benefit{margin-top:18px;padding:14px 16px;background:var(--brand-tint);border-left:3px solid var(--c1);border-radius:0 var(--r-8) var(--r-8) 0}
+.sf-benefit .sf-lbl{margin:0 0 4px}
+.sf-benefit p{font-size:14.5px;line-height:1.55;font-weight:500;color:var(--ink-2)}
+/* keep the empty toast fully off-screen until it is shown */
+#toast{transform:translateX(-50%) translateY(calc(100% + 48px))}
+#toast.show{transform:translateX(-50%) translateY(0)}
+/* illustration stays in view while a long panel is open */
+.sf-art{align-self:start;position:sticky;top:150px;padding-top:24px}
+@media(max-width:900px){.sf-art{position:static;padding-top:0}}
+@media(prefers-reduced-motion:reduce){
+  .sf-panel,.sf-item,.sf-trigger,.sf-chev,.sf-ic{transition:none!important}
+}
+</style>
+<script>
+/* scroll reveal: hide-until-visible only when JS runs; failsafe shows everything if the script below never starts */
+document.documentElement.classList.add('js-reveal');
+setTimeout(function(){ if(!window.__rvOk) document.documentElement.classList.add('rv-fail'); },4000);
+</script>
+</head>
+<body>
+
+<!-- intro splash -->
+<div id="intro">
+  <div class="intro-grid"></div>
+  <div class="intro-sweep"></div>
+  <div class="intro-inner">
+    <img src="assets/vyapini-logo-transparent.png" alt="Vyapini Tech Services" />
+    <div class="divider"></div>
+    <h1 class="intro-title">10 years defining digital,<br>delivering excellence.</h1>
+  </div>
+</div>
+
+<div class="announce"></div>
+
+<div class="nav-outer" id="navOuter">
+  <nav class="nav">
+    <a href="#top" class="nav-logo">
+      <span class="logo-wrap">
+        <img class="logo-base" src="assets/vyapini-logo-transparent.png" alt="Vyapini Tech Services" />
+      </span>
+    </a>
+    <div class="nav-mid">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#why">Why Us</a>
+      <a href="#process">Process</a>
+      <a href="#partners">Partners</a>
+    </div>
+    <div class="nav-right">
+      <a href="#contact" class="btn btn-primary">Get a quote</a>
+      <button class="burger" id="burger" aria-label="Toggle menu"><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#why">Why Us</a>
+    <a href="#process">Process</a>
+    <a href="#partners">Partners</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<main id="top">
+
+<div class="hero-video">
+  <video id="heroVideo" autoplay muted loop playsinline preload="auto" aria-label="Vyapini Tech Services — InfinITe possibilities"></video>
+  <button class="vctl" id="vctl" type="button" aria-label="Pause video">
+    <svg class="i-pause" viewBox="0 0 24 24"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+    <svg class="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+</div>
+
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <h1>10 years defining digital, delivering excellence.</h1>
+      <p class="lede">Secure, scalable and automated IT solutions for your enterprise — from cloud migration to cybersecurity, built and managed end to end.</p>
+    </div>
+    <div class="panel" id="panel">
+      <div class="panel-track" id="panelTrack">
+        <div class="panel-row"><span class="toggle"></span><span class="nm">Cloud Migration</span><span class="st">Ready</span></div>
+        <div class="panel-row"><span class="toggle"></span><span class="nm">Cyber Security</span><span class="st">Ready</span></div>
+        <div class="panel-row"><span class="toggle"></span><span class="nm">Disaster Recovery</span><span class="st">Ready</span></div>
+        <div class="panel-row"><span class="toggle"></span><span class="nm">Workflow Automation</span><span class="st">Ready</span></div>
+        <div class="panel-row"><span class="toggle"></span><span class="nm">Big Data &amp; Analytics</span><span class="st">Ready</span></div>
+        <div class="panel-row"><span class="toggle"></span><span class="nm">DevOps Consulting</span><span class="st">Ready</span></div>
+        <div class="panel-row"><span class="toggle"></span><span class="nm">Helpdesk &amp; Support</span><span class="st">Ready</span></div>
+        <div class="panel-row"><span class="toggle"></span><span class="nm">Security Audits</span><span class="st">Ready</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trusted">
+  <div class="wrap">
+    <div class="trusted-lbl">Trusted by</div>
+    <div class="marquee">
+      <div class="marquee-track ltr" id="customerTrack">
+  <img src="assets/logos/deeksha.webp" alt="Deeksha" />
+  <img src="assets/logos/dote.jfif" alt="DOTE" />
+  <img src="assets/logos/firebird.png" alt="Firebird" />
+  <img src="assets/logos/gce.jfif" alt="GCE" />
+  <img src="assets/logos/gct.png" alt="GCT" />
+  <img src="assets/logos/gkf.png" alt="GKF" />
+  <img src="assets/logos/GP.jpeg" alt="GP" />
+  <img src="assets/logos/GreenPark.jpeg" alt="GreenPark" />
+  <img src="assets/logos/hwashin.jfif" alt="Hwashin" />
+  <img src="assets/logos/ipc.png" alt="IPC" />
+  <img src="assets/logos/kln.png" alt="KLN" />
+  <img src="assets/logos/netcon.jpg" alt="Netcon" />
+  <img src="assets/logos/pricol.webp" alt="Pricol" />
+  <img src="assets/logos/ProConnect.jpeg" alt="ProConnect" />
+  <img src="assets/logos/redington.png" alt="Redington" />
+  <img src="assets/logos/redserv.jfif" alt="Redserv" />
+  <img src="assets/logos/thed.avif" alt="THED" />
+</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SERVICES: banner image + content ===== -->
+<section id="services" class="sec-light">
+  <div class="section-banner">
+    <div class="section-banner-inner">
+      <img src="assets/banners/services.jpg" alt="IT services — cloud infrastructure and enterprise technology" />
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The all-in-one solution</span>
+      <h2 class="h-lg">Complete IT solutions for your business</h2>
+      <p>From infrastructure migration to AI integration — enterprise-grade solutions tailored to your growth, delivered by a single accountable partner.</p>
+    </div>
+
+    <div class="pills" id="pills">
+      <button class="active" data-filter="all">All services</button>
+      <button data-filter="technology">By Technology</button>
+      <button data-filter="competency">By Competency</button>
+    </div>
+
+    <!-- ===== ALL SERVICES ===== -->
+    <div class="svc-block active" id="svc-all">
+      <div class="svc-core-grid">
+        <div class="svc-core-item">
+          <span class="ico-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg>
+          </span>
+          <h4>Custom Software Development</h4>
+          <p>Scalable, high-performance web, mobile, and desktop applications built to solve your unique business challenges. We follow agile practices and thoughtful UI/UX design so the software fits how your teams actually work.</p>
+        </div>
+        <div class="svc-core-item">
+          <span class="ico-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <h4>Comprehensive Security Audits</h4>
+          <p>Proactive vulnerability assessments, penetration testing, and compliance checks to safeguard your critical data. Each audit ends with a clear, prioritised report so your team knows exactly what to fix first.</p>
+        </div>
+        <div class="svc-core-item center-item">
+          <span class="ico-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/><path d="m9 13 3-3 3 3"/></svg>
+          </span>
+          <h4>Cloud Infrastructure &amp; Migration</h4>
+          <p>Seamless transitions to leading platforms like AWS and Microsoft Azure, covering assessment, planning, migration and post-go-live support. We keep disruption low and your data safe throughout.</p>
+        </div>
+        <div class="svc-core-item">
+          <span class="ico-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/><circle cx="12" cy="12" r="2"/></svg>
+          </span>
+          <h4>AI &amp; Machine Learning Integration</h4>
+          <p>Unlock actionable insights from your data with custom predictive analytics and AI-powered decision-making tools. We integrate models into your existing systems so insights reach the people who act on them.</p>
+        </div>
+        <div class="svc-core-item">
+          <span class="ico-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="3"/></svg>
+          </span>
+          <h4>IT &amp; Workflow Automation</h4>
+          <p>Intelligent IT service automation combines predictive AI and workflow orchestration to streamline helpdesk operations. Routine requests are resolved faster, freeing your IT team for higher-value work.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== BY TECHNOLOGY ===== -->
+    <div class="svc-block" id="svc-technology">
+      <div class="sf-list">
+
+        <div class="sf-row">
+          <div class="sf-card purple">
+            <div class="sf-head">
+              <span class="sf-circle">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="22" r="8"/><path d="M16 22h16M24 14c-3 3-3 13 0 16M24 14c3 3 3 13 0 16"/><circle cx="9" cy="30" r="3.5"/><path d="M3 41c0-4 2.7-6.5 6-6.5s6 2.5 6 6.5"/><circle cx="39" cy="30" r="3.5"/><path d="M33 41c0-4 2.7-6.5 6-6.5s6 2.5 6 6.5"/></svg>
+              </span>
+              <div class="sf-ribbon"><h4>Information Technology<br>Services</h4></div>
+            </div>
+            <h3 class="sf-headline">Resilient, Automated, and Secure IT Operations</h3>
+            <p class="sf-intro">Eliminate manual bottlenecks and protect your critical infrastructure with modern IT operations built for speed, reliability, and 24/7 security.</p>
+            <ul class="sf-acc">
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-0-0-end-to-end-it-automation-t" aria-expanded="false" aria-controls="sf-0-0-end-to-end-it-automation-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></span>
+                <span class="sf-t">End-to-End IT Automation</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-0-0-end-to-end-it-automation-p" role="region" aria-labelledby="sf-0-0-end-to-end-it-automation-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Replace repetitive manual tasks with intelligent, code-driven workflows. We automate server provisioning, software patching, and routine system maintenance to reduce human error, speed up deployments, and free your team to focus on innovation.</p>
+                    <p class="sf-full">We replace repetitive manual IT tasks with automated, code-driven workflows. Your systems stay consistent, your team saves time, and every change is faster and more reliable.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Automated server and user account provisioning</li>
+              <li>Scheduled software patching and updates</li>
+              <li>Routine maintenance and self-healing scripts</li>
+              <li>Standardized, repeatable infrastructure setups</li>
+              <li><strong>Ticketing (IT Service Management):</strong> automated ticket routing, priorities and SLA tracking for every IT request</li>
+              <li><strong>Active Directory (AD) management:</strong> group policies, permissions and directory cleanup</li>
+              <li><strong>Asset management:</strong> automatic discovery and tracking of hardware, software and licenses</li>
+              <li><strong>Unified Endpoint Management (UEM):</strong> one console for policies and software on laptops, desktops and mobiles</li>
+              <li><strong>Mobile Device Management (MDM):</strong> enrollment, security policies and remote lock or wipe for company phones and tablets</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Fewer human errors, faster delivery and lower operating effort.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-0-1-comprehensive-it-security-t" aria-expanded="false" aria-controls="sf-0-1-comprehensive-it-security-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+                <span class="sf-t">Comprehensive IT Security</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-0-1-comprehensive-it-security-p" role="region" aria-labelledby="sf-0-1-comprehensive-it-security-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Defend your business against evolving cyber threats with multi-layered protection. From next-generation firewalls and endpoint security to strict identity and access controls, we lock down your networks, devices, and sensitive data.</p>
+                    <p class="sf-full">We protect your business with layered security across networks, devices, applications and users. Every layer works together so a single weakness does not expose your data.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Next-generation firewall configuration</li>
+              <li>IAM (Identity &amp; Access Management) with multi-factor authentication</li>
+              <li>Regular security reviews and hardening</li>
+              <li><strong>Endpoint security:</strong> anti-malware and disk encryption on every laptop, desktop and server</li>
+              <li><strong>EDR, XDR and MDR:</strong> detection and response across endpoints, network, email and cloud, with 24/7 managed response</li>
+              <li><strong>ZTNA (Zero Trust Network Access):</strong> application-level access only after identity and device health are verified</li>
+              <li><strong>Email security:</strong> protection against phishing, malware and spoofed emails</li>
+              <li><strong>DLP (Data Loss Prevention):</strong> rules that stop sensitive data leaving through email, USB, cloud or web uploads</li>
+              <li><strong>Device, application and browser control:</strong> control over USB devices, approved software and safe browsing</li>
+              <li><strong>AI defences:</strong> AI-assisted threat detection and safe-use controls for AI tools</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Stronger protection against cyber threats and safer handling of sensitive data.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-0-2-data-backup-disaster-recovery-t" aria-expanded="false" aria-controls="sf-0-2-data-backup-disaster-recovery-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
+                <span class="sf-t">Data Backup &amp; Disaster Recovery</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-0-2-data-backup-disaster-recovery-p" role="region" aria-labelledby="sf-0-2-data-backup-disaster-recovery-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Ensure your business never misses a beat, even when the unexpected happens. We implement automated, encrypted off-site backups and rapid failover systems so you can restore critical files and resume operations within minutes of an outage.</p>
+                    <p class="sf-full">We make sure your critical data and systems can be restored quickly after a failure, cyberattack or outage. Backups are automated, encrypted and regularly tested.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Scheduled, encrypted backups of files, servers and databases</li>
+              <li>Off-site and cloud backup storage</li>
+              <li>Disaster recovery planning and failover setup</li>
+              <li>Periodic recovery drills to confirm backups work</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Minimal data loss, faster recovery and confidence that your business can restart after any incident.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-0-3-unified-monitoring-threat-response-t" aria-expanded="false" aria-controls="sf-0-3-unified-monitoring-threat-response-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4M5 11h3l2-3 3 5 2-2h4"/></svg></span>
+                <span class="sf-t">Unified Monitoring &amp; Threat Response</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-0-3-unified-monitoring-threat-response-p" role="region" aria-labelledby="sf-0-3-unified-monitoring-threat-response-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Gain complete, 24/7 visibility across your entire IT environment. Using centralized real-time analytics, our systems continuously scan for performance issues and suspicious behavior, detecting and neutralizing threats before they disrupt your business.</p>
+                    <p class="sf-full">We bring all your servers, networks and applications into one monitoring view. Our systems watch for performance problems and suspicious activity around the clock and respond early.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Centralized dashboards and real-time alerts</li>
+              <li>Automated detection of unusual behavior</li>
+              <li>Rapid isolation and response to threats</li>
+              <li><strong>Network and server monitoring:</strong> uptime, performance and capacity alerts for devices, servers and services</li>
+              <li><strong>SIEM:</strong> central collection and correlation of logs from across your environment</li>
+              <li><strong>XDR and MDR:</strong> connected detection across security tools, backed by 24/7 expert response</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Early warning, less downtime and faster handling of security incidents.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-0-4-compliance-audit-readiness-business-continuity-t" aria-expanded="false" aria-controls="sf-0-4-compliance-audit-readiness-business-continuity-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 2.5h6V6H9zM9 14l2 2 4-4"/></svg></span>
+                <span class="sf-t">Compliance, Audit Readiness &amp; Business Continuity</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-0-4-compliance-audit-readiness-business-continuity-p" role="region" aria-labelledby="sf-0-4-compliance-audit-readiness-business-continuity-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Stay ahead of regulatory demands with confidence. We configure your infrastructure to meet strict industry standards (such as ISO, GDPR, and HIPAA), maintaining automated audit trails and tested continuity plans that keep you compliant and operational year-round.</p>
+                    <p class="sf-full">We align your IT environment with industry standards and regulations, and prepare you for audits. We also build continuity plans so critical operations keep running during disruptions.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Configuration aligned to standards such as ISO, GDPR and HIPAA</li>
+              <li>Automated audit trails and compliance reports</li>
+              <li>Policy and documentation support</li>
+              <li>Business continuity plans, tested regularly</li>
+              <li><strong>Asset management:</strong> an up-to-date inventory of hardware, software and licenses for audits</li>
+              <li><strong>DLP and IAM:</strong> data protection rules and access records that support compliance evidence</li>
+              <li><strong>Vulnerability management:</strong> regular scan results kept as proof of ongoing security checks</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Audit-ready systems, lower regulatory risk and dependable operations year-round.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <div class="sf-art">
+            <svg viewBox="0 0 440 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Laptop with connected servers">
+              <defs>
+                <linearGradient id="itScr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#648dc3"/><stop offset="1" stop-color="#2f5484"/></linearGradient>
+                <linearGradient id="itSrv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7da0ce"/><stop offset="1" stop-color="#3d6293"/></linearGradient>
+              </defs>
+              <!-- link lines -->
+              <path d="M95 215 L170 190 M345 205 L270 190 M220 285 L220 235" stroke="#bccee5" stroke-width="3" stroke-dasharray="6 6" fill="none"/>
+              <!-- laptop -->
+              <polygon points="150,70 300,70 330,170 120,170" fill="#273548"/>
+              <polygon points="158,78 292,78 318,162 132,162" fill="url(#itScr)"/>
+              <rect x="190" y="105" width="70" height="8" rx="4" fill="#fff" opacity=".7"/>
+              <rect x="200" y="122" width="50" height="8" rx="4" fill="#fff" opacity=".45"/>
+              <circle cx="225" cy="148" r="6" fill="#fff" opacity=".8"/>
+              <polygon points="120,170 330,170 360,196 90,196" fill="#cad5e3"/>
+              <polygon points="90,196 360,196 360,204 90,204" fill="#9cafc9"/>
+              <polygon points="170,178 280,178 290,188 160,188" fill="#acbdd3"/>
+              <!-- left server stack -->
+              <g>
+                <rect x="38" y="190" width="70" height="26" rx="6" fill="url(#itSrv)"/><rect x="38" y="222" width="70" height="26" rx="6" fill="url(#itSrv)"/><rect x="38" y="254" width="70" height="26" rx="6" fill="url(#itSrv)"/>
+                <circle cx="52" cy="203" r="3" fill="#e4ecf7"/><circle cx="52" cy="235" r="3" fill="#e4ecf7"/><circle cx="52" cy="267" r="3" fill="#e4ecf7"/>
+                <rect x="66" y="201" width="32" height="4" rx="2" fill="#e4ecf7" opacity=".6"/><rect x="66" y="233" width="32" height="4" rx="2" fill="#e4ecf7" opacity=".6"/><rect x="66" y="265" width="32" height="4" rx="2" fill="#e4ecf7" opacity=".6"/>
+              </g>
+              <!-- right server stack -->
+              <g>
+                <rect x="332" y="200" width="70" height="26" rx="6" fill="url(#itSrv)"/><rect x="332" y="232" width="70" height="26" rx="6" fill="url(#itSrv)"/><rect x="332" y="264" width="70" height="26" rx="6" fill="url(#itSrv)"/>
+                <circle cx="346" cy="213" r="3" fill="#e4ecf7"/><circle cx="346" cy="245" r="3" fill="#e4ecf7"/><circle cx="346" cy="277" r="3" fill="#e4ecf7"/>
+                <rect x="360" y="211" width="32" height="4" rx="2" fill="#e4ecf7" opacity=".6"/><rect x="360" y="243" width="32" height="4" rx="2" fill="#e4ecf7" opacity=".6"/><rect x="360" y="275" width="32" height="4" rx="2" fill="#e4ecf7" opacity=".6"/>
+              </g>
+              <!-- bottom server -->
+              <rect x="185" y="238" width="70" height="26" rx="6" fill="url(#itSrv)"/><rect x="185" y="268" width="70" height="26" rx="6" fill="url(#itSrv)"/>
+              <circle cx="199" cy="251" r="3" fill="#e4ecf7"/><circle cx="199" cy="281" r="3" fill="#e4ecf7"/>
+              <!-- shield badge -->
+              <circle cx="330" cy="62" r="22" fill="#fff" stroke="#bccee5" stroke-width="3"/>
+              <path d="M330 48 l12 5 v9 c0 8-5 13-12 16 c-7-3-12-8-12-16 v-9z" fill="#416ba3"/><path d="M324 62 l4 4 8-8" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="sf-row reverse">
+          <div class="sf-card green">
+            <div class="sf-head">
+              <span class="sf-circle">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M36 34H14a8 8 0 0 1-1.4-15.9A11 11 0 0 1 34 16.5 9 9 0 0 1 36 34z"/></svg>
+              </span>
+              <div class="sf-ribbon"><h4>Cloud &amp; Platform<br>Migration Services</h4></div>
+            </div>
+            <h3 class="sf-headline">Seamless Cloud Transformation on AWS &amp; Azure</h3>
+            <p class="sf-intro">Modernize your infrastructure and scale effortlessly. We plan, execute, and manage end-to-end cloud migrations with minimal downtime and maximum performance.</p>
+            <ul class="sf-acc">
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-1-0-cloud-infrastructure-migration-aws-azure-t" aria-expanded="false" aria-controls="sf-1-0-cloud-infrastructure-migration-aws-azure-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/><path d="m9 13 3-3 3 3M12 10v7"/></svg></span>
+                <span class="sf-t">Cloud Infrastructure Migration (AWS &amp; Azure)</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-1-0-cloud-infrastructure-migration-aws-azure-p" role="region" aria-labelledby="sf-1-0-cloud-infrastructure-migration-aws-azure-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Transition smoothly from legacy on-premise servers to the cloud. We assess your current environment, architect a secure cloud foundation on AWS or Azure, and migrate your workloads with zero data loss and minimal disruption to daily operations.</p>
+                    <p class="sf-full">We move your servers, storage and networks from on-premise or older environments to AWS or Microsoft Azure. Each move is planned to protect your data and keep daily operations running.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Assessment of your current servers and dependencies</li>
+              <li>Secure cloud network and landing zone design</li>
+              <li>Phased workload migration with testing</li>
+              <li>Cutover support and post-migration validation</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Better scalability, improved performance and lower infrastructure cost.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-1-1-database-migration-solutions-t" aria-expanded="false" aria-controls="sf-1-1-database-migration-solutions-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="9" cy="5" rx="6" ry="2.5"/><path d="M3 5v10c0 1.4 2.7 2.5 6 2.5M3 10c0 1.4 2.7 2.5 6 2.5"/><path d="M13 18h8m-3-3 3 3-3 3"/></svg></span>
+                <span class="sf-t">Database Migration Solutions</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-1-1-database-migration-solutions-p" role="region" aria-labelledby="sf-1-1-database-migration-solutions-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Move business-critical databases safely and efficiently. Using real-time data replication and zero-downtime cutover strategies, we migrate and optimize relational and NoSQL databases to high-performance cloud environments.</p>
+                    <p class="sf-full">We migrate business-critical databases safely, with data checks at every stage. Real-time replication keeps the source and target in sync until the final switchover.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Migration of relational and NoSQL databases</li>
+              <li>Continuous data replication with minimal downtime</li>
+              <li>Data validation and integrity checks</li>
+              <li>Performance tuning on the new platform</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Reliable data, minimal disruption and databases ready for growth.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-1-2-infrastructure-solutions-t" aria-expanded="false" aria-controls="sf-1-2-infrastructure-solutions-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/></svg></span>
+                <span class="sf-t">Infrastructure Solutions</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-1-2-infrastructure-solutions-p" role="region" aria-labelledby="sf-1-2-infrastructure-solutions-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Build a cloud architecture engineered for growth and cost efficiency. We design and configure scalable virtual networks, load balancers, and automated resource scaling so your infrastructure adapts instantly to changing business demands.</p>
+                    <p class="sf-full">We design cloud architectures that are secure, scalable and cost-efficient. Your infrastructure grows or shrinks with your business demand.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Virtual networks, subnets and secure access design</li>
+              <li>Load balancers for high availability</li>
+              <li>Auto-scaling of compute resources</li>
+              <li>Cloud storage and cost optimization</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>High availability, flexible capacity and controlled cloud spending.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-1-3-application-migration-solutions-design-deploymen-t" aria-expanded="false" aria-controls="sf-1-3-application-migration-solutions-design-deploymen-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12h8m-3-3 3 3-3 3"/></svg></span>
+                <span class="sf-t">Application Migration Solutions: Design, Deployment, Maintenance &amp; Support</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-1-3-application-migration-solutions-design-deploymen-p" role="region" aria-labelledby="sf-1-3-application-migration-solutions-design-deploymen-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Re-host or modernize your applications for peak cloud performance. From initial architectural design and automated CI/CD deployment to ongoing patching, cost optimization, and 24/7 support, we manage your applications across their entire lifecycle.</p>
+                    <p class="sf-full">We move your applications to the cloud by re-hosting or modernizing them, depending on what suits each one. We then support them across their full lifecycle.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Application assessment and migration design</li>
+              <li>Containerization and modernization where needed</li>
+              <li>Automated CI/CD deployment</li>
+              <li>Ongoing patching, cost optimization and 24/7 support</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Better application performance, safer releases and long-term stability.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <div class="sf-art">
+            <svg viewBox="0 0 440 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cloud with databases and devices">
+              <defs>
+                <linearGradient id="clCloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#89a6cd"/><stop offset="1" stop-color="#3c608f"/></linearGradient>
+                <linearGradient id="clDb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2c4970"/><stop offset="1" stop-color="#152841"/></linearGradient>
+                <linearGradient id="clScr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6387b5"/><stop offset="1" stop-color="#2c4e79"/></linearGradient>
+              </defs>
+              <!-- platform -->
+              <ellipse cx="220" cy="238" rx="190" ry="50" fill="#e8edf4"/>
+              <ellipse cx="220" cy="238" rx="150" ry="36" fill="none" stroke="#bacadf" stroke-width="2" stroke-dasharray="5 6"/>
+              <!-- cloud -->
+              <path d="M300 128 H150 a42 42 0 0 1 -6 -83.5 A62 62 0 0 1 262 38 a46 46 0 0 1 38 90z" fill="url(#clCloud)"/>
+              <ellipse cx="226" cy="84" rx="28" ry="10" fill="#fff" opacity=".85"/><rect x="198" y="84" width="56" height="26" fill="#fff" opacity=".85"/><ellipse cx="226" cy="110" rx="28" ry="10" fill="#fff" opacity=".85"/>
+              <ellipse cx="226" cy="84" rx="28" ry="10" fill="#d8e2ee"/>
+              <!-- databases -->
+              <g>
+                <ellipse cx="82" cy="108" rx="30" ry="11" fill="#213b5d"/><path d="M52 108 v28 a30 11 0 0 0 60 0 v-28" fill="url(#clDb)"/><ellipse cx="82" cy="108" rx="30" ry="11" fill="#375b89"/>
+                <ellipse cx="82" cy="126" rx="30" ry="11" fill="none" stroke="#6387b5" stroke-width="2"/>
+              </g>
+              <g>
+                <ellipse cx="368" cy="108" rx="30" ry="11" fill="#213b5d"/><path d="M338 108 v28 a30 11 0 0 0 60 0 v-28" fill="url(#clDb)"/><ellipse cx="368" cy="108" rx="30" ry="11" fill="#375b89"/>
+                <ellipse cx="368" cy="126" rx="30" ry="11" fill="none" stroke="#6387b5" stroke-width="2"/>
+              </g>
+              <!-- link lines -->
+              <path d="M82 145 L110 200 M368 145 L340 200 M226 128 L226 190" stroke="#708fb8" stroke-width="3" stroke-dasharray="6 6" fill="none"/>
+              <!-- central disk -->
+              <ellipse cx="226" cy="208" rx="26" ry="10" fill="#152841"/><rect x="200" y="196" width="52" height="12" fill="#152841"/><ellipse cx="226" cy="196" rx="26" ry="10" fill="#2c4970"/>
+              <!-- left screen -->
+              <polygon points="60,200 150,186 168,232 78,250" fill="url(#clScr)"/>
+              <polygon points="60,200 78,250 78,258 60,208" fill="#213b5d"/>
+              <rect x="86" y="206" width="48" height="6" rx="3" fill="#fff" opacity=".7" transform="rotate(-9 86 206)"/><rect x="92" y="222" width="34" height="6" rx="3" fill="#fff" opacity=".45" transform="rotate(-9 92 222)"/>
+              <!-- right screen -->
+              <polygon points="300,186 390,200 372,250 282,232" fill="url(#clScr)"/>
+              <polygon points="390,200 390,208 372,258 372,250" fill="#213b5d"/>
+              <rect x="310" y="204" width="48" height="6" rx="3" fill="#fff" opacity=".7" transform="rotate(9 310 204)"/><rect x="316" y="220" width="34" height="6" rx="3" fill="#fff" opacity=".45" transform="rotate(9 316 220)"/>
+              <!-- keyboards -->
+              <polygon points="64,262 150,248 160,268 78,284" fill="#d3dce8"/>
+              <polygon points="290,248 376,262 362,284 280,268" fill="#d3dce8"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== BY COMPETENCY ===== -->
+    <div class="svc-block" id="svc-competency">
+      <div class="sf-list">
+
+        <div class="sf-row">
+          <div class="sf-card red">
+            <div class="sf-head">
+              <span class="sf-circle">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 8 11v11c0 10 7 17 16 21 9-4 16-11 16-21V11z"/><rect x="17" y="22" width="14" height="11" rx="2"/><path d="M20 22v-4a4 4 0 0 1 8 0v4"/><circle cx="24" cy="27.5" r="1.6" fill="currentColor"/></svg>
+              </span>
+              <div class="sf-ribbon"><h4>Cyber Security<br>Services</h4></div>
+            </div>
+            <h3 class="sf-headline">Proactive Defense, Deep Visibility, and Rapid Incident Response</h3>
+            <p class="sf-intro">Protect your digital assets, uncover hidden vulnerabilities, and stay resilient against sophisticated cyber threats with specialized security expertise.</p>
+            <ul class="sf-acc">
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-10-0-vulnerability-analysis-management-t" aria-expanded="false" aria-controls="sf-10-0-vulnerability-analysis-management-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v3.5M11 14.2h.01"/></svg></span>
+                <span class="sf-t">Vulnerability Analysis &amp; Management</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-10-0-vulnerability-analysis-management-p" role="region" aria-labelledby="sf-10-0-vulnerability-analysis-management-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Identify and fix security weak points before attackers can exploit them. We continuously scan your networks, servers, and applications to detect misconfigurations and outdated software, prioritizing remediation based on real-world business risk.</p>
+                    <p class="sf-full">We find and fix security weaknesses before attackers can use them. Findings are ranked by real business risk so the most important fixes come first.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Regular scans of networks, servers and applications</li>
+              <li>Detection of misconfigurations and outdated software</li>
+              <li>Risk-based prioritization of issues</li>
+              <li>Remediation guidance and re-testing</li>
+              <li><strong>Vulnerability management platform:</strong> dashboards and trend reports to track progress</li>
+              <li><strong>Asset-based risk view:</strong> each finding linked to the device and its owner</li>
+              <li>Patch deployment through Unified Endpoint Management (UEM) to close issues quickly</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>A smaller attack surface and clear, prioritized security actions.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-10-1-penetration-testing-services-t" aria-expanded="false" aria-controls="sf-10-1-penetration-testing-services-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg></span>
+                <span class="sf-t">Penetration Testing Services</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-10-1-penetration-testing-services-p" role="region" aria-labelledby="sf-10-1-penetration-testing-services-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Put your defenses to the ultimate test with simulated real-world cyberattacks. Our ethical hackers rigorously probe your web apps, APIs, and internal networks to uncover deep logic flaws and provide actionable blueprints to close every gap.</p>
+                    <p class="sf-full">Our ethical hackers simulate real-world attacks to test how well your defenses hold up. You receive a clear report showing what was found and how to fix it.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Web application and API testing</li>
+              <li>Internal and external network testing</li>
+              <li>Detection of logic flaws and access control gaps</li>
+              <li>Detailed report with fix recommendations</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Proof of your real security level and a practical plan to close every gap.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-10-2-incident-forensic-analysis-t" aria-expanded="false" aria-controls="sf-10-2-incident-forensic-analysis-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h5"/><path d="M14 3l5 5v2"/><circle cx="16.5" cy="16.5" r="3"/><path d="m21 21-2.4-2.4"/></svg></span>
+                <span class="sf-t">Incident &amp; Forensic Analysis</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-10-2-incident-forensic-analysis-p" role="region" aria-labelledby="sf-10-2-incident-forensic-analysis-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Contain breaches fast and uncover the exact root cause. When a security incident occurs, our response team isolates affected systems, preserves digital evidence, traces the attacker’s footprint, and helps you recover safely with minimal business disruption.</p>
+                    <p class="sf-full">When a security incident happens, we act fast to contain it and find the root cause. We preserve evidence and help you recover safely.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Rapid containment and isolation of affected systems</li>
+              <li>Digital evidence collection and preservation</li>
+              <li>Attack tracing and root cause analysis</li>
+              <li>Recovery support and incident report</li>
+              <li>EDR data to trace attacker activity on laptops, desktops and servers</li>
+              <li>XDR correlation across endpoint, network, email and cloud events</li>
+              <li>MDR analysts for 24/7 investigation and response</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Limited damage, clear answers on what happened and a stronger defense afterwards.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-10-3-siem-services-security-information-event-managem-t" aria-expanded="false" aria-controls="sf-10-3-siem-services-security-information-event-managem-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 16l3-4 3 3 4-6"/></svg></span>
+                <span class="sf-t">SIEM Services (Security Information &amp; Event Management)</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-10-3-siem-services-security-information-event-managem-p" role="region" aria-labelledby="sf-10-3-siem-services-security-information-event-managem-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Turn raw security logs into actionable, real-time intelligence. We deploy, tune, and manage centralized SIEM platforms that correlate activity across your entire environment, detecting anomalies and triggering automated alerts 24/7.</p>
+                    <p class="sf-full">We turn raw security logs into real-time intelligence. We deploy and manage a central SIEM platform that watches your whole environment.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>SIEM deployment and log source integration</li>
+              <li>Custom detection rules and tuning</li>
+              <li>24/7 alerting on suspicious activity</li>
+              <li>Reporting for security and compliance teams</li>
+              <li>AI-assisted detection and anomaly analysis (AI defences)</li>
+              <li>Integration with XDR and MDR for connected response</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Faster threat detection and complete visibility across your systems.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-10-4-network-application-server-security-audit-t" aria-expanded="false" aria-controls="sf-10-4-network-application-server-security-audit-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span>
+                <span class="sf-t">Network, Application, Server &amp; Security Audit</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-10-4-network-application-server-security-audit-p" role="region" aria-labelledby="sf-10-4-network-application-server-security-audit-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Ensure your infrastructure meets the highest standards of security and compliance. We conduct thorough, top-to-bottom evaluations of your architecture, access controls, and security policies to eliminate blind spots and prepare you for regulatory audits.</p>
+                    <p class="sf-full">We carry out a complete review of your architecture, access controls and security policies. The audit removes blind spots and prepares you for regulatory checks.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Network and server configuration review</li>
+              <li>Application security assessment</li>
+              <li>Access control and policy evaluation, including IAM, Active Directory and ZTNA</li>
+              <li>Audit report with a prioritized action plan</li>
+              <li>Review of DLP, email security and endpoint security configuration</li>
+              <li>Review of device control, application control and browser control policies</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Better compliance readiness and a clear view of your security position.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <div class="sf-art">
+            <svg viewBox="0 0 440 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Laptop with security shield and padlocks">
+              <defs>
+                <linearGradient id="cyBase" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e3f56"/><stop offset="1" stop-color="#18212c"/></linearGradient>
+                <linearGradient id="cyShield" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6997d3"/><stop offset="1" stop-color="#346bb4"/></linearGradient>
+                <linearGradient id="cyLock" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#709cd6"/><stop offset="1" stop-color="#3c78c6"/></linearGradient>
+              </defs>
+              <!-- base platform -->
+              <ellipse cx="215" cy="240" rx="195" ry="62" fill="url(#cyBase)"/>
+              <ellipse cx="215" cy="232" rx="160" ry="44" fill="#233042"/>
+              <!-- red server -->
+              <polygon points="60,160 130,140 150,162 80,184" fill="#3165a9"/><polygon points="80,184 150,162 150,176 80,198" fill="#23497a"/><polygon points="60,160 80,184 80,198 60,174" fill="#2a5690"/>
+              <rect x="94" y="164" width="36" height="4" rx="2" fill="#dbe6f4" opacity=".8" transform="rotate(-20 94 164)"/>
+              <!-- laptop -->
+              <polygon points="150,70 290,60 310,170 140,182" fill="#e8edf3"/>
+              <polygon points="158,78 282,69 298,162 150,172" fill="#18212c"/>
+              <!-- shield -->
+              <path d="M222 82 l42 14 v34 c0 22-16 36-42 46 c-26-10-42-24-42-46 v-34z" fill="url(#cyShield)" transform="translate(0 -4)"/>
+              <path d="M222 100 l26 9 v22 c0 14-10 22-26 29 c-16-7-26-15-26-29 v-22z" fill="#fff" opacity=".18" transform="translate(0 -4)"/>
+              <rect x="210" y="118" width="24" height="20" rx="4" fill="#fff"/><path d="M215 118 v-6 a7 7 0 0 1 14 0 v6" fill="none" stroke="#fff" stroke-width="4"/><circle cx="222" cy="128" r="3" fill="#346bb4"/>
+              <polygon points="140,182 310,170 340,206 110,222" fill="#d3dce8"/>
+              <!-- keyboard -->
+              <polygon points="165,190 285,182 298,196 150,206" fill="#b0c0d4"/>
+              <!-- large padlock left -->
+              <path d="M96 232 v-14 a22 22 0 0 1 44 0 v14" fill="none" stroke="#b1c9e8" stroke-width="8" stroke-linecap="round"/>
+              <rect x="86" y="228" width="64" height="48" rx="8" fill="url(#cyLock)"/><circle cx="118" cy="248" r="6" fill="#1e3d66"/><rect x="115" y="250" width="6" height="14" rx="2" fill="#1e3d66"/>
+              <!-- database right -->
+              <ellipse cx="350" cy="205" rx="40" ry="14" fill="#2a5690"/><path d="M310 205 v40 a40 14 0 0 0 80 0 v-40" fill="#346bb4"/><ellipse cx="350" cy="205" rx="40" ry="14" fill="#6997d3"/>
+              <ellipse cx="350" cy="226" rx="40" ry="14" fill="none" stroke="#b5ccea" stroke-width="2"/>
+              <!-- small padlock top right -->
+              <g transform="translate(332 70)">
+                <path d="M8 22 v-8 a12 12 0 0 1 24 0 v8" fill="none" stroke="#b1c9e8" stroke-width="6" stroke-linecap="round"/>
+                <rect x="0" y="22" width="40" height="30" rx="6" fill="url(#cyLock)"/><circle cx="20" cy="36" r="4" fill="#1e3d66"/>
+              </g>
+              <!-- wifi -->
+              <path d="M286 262 a28 28 0 0 1 28 -20 M290 268 a18 18 0 0 1 18 -12" stroke="#6997d3" stroke-width="5" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="sf-row reverse">
+          <div class="sf-card blue">
+            <div class="sf-head">
+              <span class="sf-circle">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="36" height="26" rx="3"/><path d="M18 42h12M24 34v8"/><path d="m20 17-5 5 5 5M28 17l5 5-5 5"/></svg>
+              </span>
+              <div class="sf-ribbon"><h4>Application<br>Development Services</h4></div>
+            </div>
+            <h3 class="sf-headline">Custom Software Built for Speed, Usability, and Scale</h3>
+            <p class="sf-intro">Turn complex business requirements into intuitive, high-performing digital products, engineered from the ground up to streamline workflows and drive growth.</p>
+            <ul class="sf-acc">
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-11-0-custom-software-app-development-t" aria-expanded="false" aria-controls="sf-11-0-custom-software-app-development-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span>
+                <span class="sf-t">Custom Software &amp; App Development</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-11-0-custom-software-app-development-p" role="region" aria-labelledby="sf-11-0-custom-software-app-development-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Build tailored web, mobile, and enterprise applications designed specifically around your business logic. Using modern, scalable architectures, we deliver secure, reliable software that solves unique operational challenges out-of-the-box tools can’t match.</p>
+                    <p class="sf-full">We build web, mobile and enterprise applications around your exact business needs. Our solutions are secure, reliable and designed to scale.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Requirement analysis and solution design</li>
+              <li>Web, mobile and enterprise application development</li>
+              <li>Secure, scalable architecture</li>
+              <li>Quality testing before release</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Software that fits your processes instead of forcing you to adapt to it.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-11-1-ui-ux-design-user-experience-t" aria-expanded="false" aria-controls="sf-11-1-ui-ux-design-user-experience-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+                <span class="sf-t">UI/UX Design &amp; User Experience</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-11-1-ui-ux-design-user-experience-p" role="region" aria-labelledby="sf-11-1-ui-ux-design-user-experience-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Create digital experiences your customers and employees actually enjoy using. Through user research, wireframing, and interactive prototyping, we design clean, intuitive interfaces that boost engagement and reduce training time.</p>
+                    <p class="sf-full">We design interfaces that people find simple and enjoyable to use. Our design process is based on user research and real feedback.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>User research and journey mapping</li>
+              <li>Wireframes and interactive prototypes</li>
+              <li>Clean, consistent visual design</li>
+              <li>Usability testing and refinement</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Higher user engagement, fewer errors and less training time.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-11-2-integration-automation-t" aria-expanded="false" aria-controls="sf-11-2-integration-automation-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h4a3 3 0 0 1 3 3v6"/></svg></span>
+                <span class="sf-t">Integration &amp; Automation</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-11-2-integration-automation-p" role="region" aria-labelledby="sf-11-2-integration-automation-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Connect your disparate tools into a single, seamless ecosystem. We build custom APIs and automated workflows that sync data across your CRM, ERP, and third-party platforms, eliminating manual data entry and operational silos.</p>
+                    <p class="sf-full">We connect your separate tools into one smooth ecosystem. Data flows automatically between systems, removing manual work and silos.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Custom API development</li>
+              <li>Integration with CRM, ERP and third-party platforms</li>
+              <li>Automated business workflows</li>
+              <li>Data synchronization across systems</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Less manual entry, fewer mistakes and faster operations.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-11-3-data-management-migration-deployment-training-on-t" aria-expanded="false" aria-controls="sf-11-3-data-management-migration-deployment-training-on-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c3 2 5 6 5 10l-5 4-5-4c0-4 2-8 5-10z"/><circle cx="12" cy="9" r="1.5"/><path d="M7 14l-3 3 4 1M17 14l3 3-4 1M12 16v6"/></svg></span>
+                <span class="sf-t">Data Management &amp; Migration; Deployment, Training &amp; Ongoing Support</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-11-3-data-management-migration-deployment-training-on-p" role="region" aria-labelledby="sf-11-3-data-management-migration-deployment-training-on-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Ensure a smooth launch and long-term software success. We structure and migrate your business data safely, handle seamless production deployments, train your teams for rapid adoption, and provide continuous updates and support as your business evolves.</p>
+                    <p class="sf-full">We make sure your software launches smoothly and keeps delivering value. This covers data handling, go-live, user training and long-term support.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Data structuring and safe migration</li>
+              <li>Production deployment and release management</li>
+              <li>User training and documentation</li>
+              <li>Continuous updates, fixes and support</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>A smooth launch, quick user adoption and dependable long-term performance.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <div class="sf-art">
+            <svg viewBox="0 0 440 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dashboard on a monitor with a developer">
+              <defs>
+                <linearGradient id="apScr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#344964"/><stop offset="1" stop-color="#1c2939"/></linearGradient>
+              </defs>
+              <!-- floor -->
+              <ellipse cx="220" cy="285" rx="190" ry="24" fill="#ebf0f6"/>
+              <!-- monitor -->
+              <polygon points="40,40 280,28 292,230 52,248" fill="#23344a"/>
+              <polygon points="50,50 272,38 282,220 60,236" fill="url(#apScr)"/>
+              <!-- sidebar -->
+              <polygon points="50,50 100,47 108,222 60,236" fill="#293c56"/>
+              <rect x="62" y="70" width="30" height="5" rx="2.5" fill="#8fb1de" transform="rotate(-3 62 70)"/><rect x="64" y="90" width="24" height="5" rx="2.5" fill="#597aa6" transform="rotate(-3 64 90)"/><rect x="66" y="110" width="28" height="5" rx="2.5" fill="#597aa6" transform="rotate(-3 66 110)"/><rect x="68" y="130" width="22" height="5" rx="2.5" fill="#597aa6" transform="rotate(-3 68 130)"/>
+              <!-- dashboard cards -->
+              <polygon points="118,64 180,60 182,100 120,104" fill="#fff"/><polygon points="190,60 262,56 264,100 192,100" fill="#fff"/>
+              <rect x="128" y="76" width="36" height="5" rx="2.5" fill="#c5d6ec" transform="rotate(-3 128 76)"/><rect x="130" y="88" width="24" height="5" rx="2.5" fill="#356eb8" transform="rotate(-3 130 88)"/>
+              <polyline points="200,92 214,80 228,86 244,70 256,74" fill="none" stroke="#356eb8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- chart bars -->
+              <polygon points="118,112 262,106 264,214 122,222" fill="#fff"/>
+              <rect x="136" y="170" width="16" height="38" rx="2" fill="#c5d7ee"/><rect x="162" y="150" width="16" height="58" rx="2" fill="#8fb1de"/><rect x="188" y="132" width="16" height="76" rx="2" fill="#356eb8"/><rect x="214" y="156" width="16" height="52" rx="2" fill="#8fb1de"/><rect x="238" y="140" width="14" height="68" rx="2" fill="#356eb8"/>
+              <!-- stand -->
+              <polygon points="156,248 188,246 192,262 152,264" fill="#344964"/>
+              <polygon points="110,264 240,258 252,276 100,282" fill="#23344a"/>
+              <!-- plant -->
+              <rect x="34" y="248" width="26" height="30" rx="3" fill="#356eb8"/><path d="M47 248 c-12 -14 -14 -28 -6 -42 c4 14 8 24 6 42 M47 248 c10 -14 18 -22 26 -26 c-2 14 -12 22 -26 26" fill="#4a82ca"/>
+              <!-- floating UI cards -->
+              <rect x="318" y="48" width="38" height="52" rx="6" fill="#356eb8"/><rect x="326" y="60" width="22" height="5" rx="2.5" fill="#fff" opacity=".8"/><rect x="326" y="72" width="16" height="5" rx="2.5" fill="#fff" opacity=".6"/>
+              <rect x="352" y="100" width="46" height="34" rx="6" fill="#8fb1de"/><rect x="360" y="112" width="30" height="5" rx="2.5" fill="#fff" opacity=".8"/>
+              <!-- person -->
+              <circle cx="334" cy="124" r="14" fill="#acc4e4"/><path d="M320 120 a14 14 0 0 1 28 -2 c-4 -8 -22 -10 -28 2z" fill="#23344a"/>
+              <path d="M312 160 q22 -16 44 0 l8 70 h-60z" fill="#23344a"/>
+              <rect x="304" y="172" width="22" height="34" rx="4" fill="#356eb8" transform="rotate(-12 304 172)"/>
+              <rect x="322" y="228" width="12" height="52" rx="3" fill="#344964"/><rect x="342" y="228" width="12" height="52" rx="3" fill="#344964"/>
+              <rect x="318" y="276" width="20" height="8" rx="3" fill="#111c2b"/><rect x="340" y="276" width="20" height="8" rx="3" fill="#111c2b"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="sf-row">
+          <div class="sf-card purple">
+            <div class="sf-head">
+              <span class="sf-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+              </span>
+              <div class="sf-ribbon"><h4>AI &amp; Machine Learning<br>Services</h4></div>
+            </div>
+            <h3 class="sf-headline">Intelligent Automation, Predictive Insights, and Data-Driven Decisions</h3>
+            <p class="sf-intro">Unlock actionable insights from your data with custom predictive analytics, intelligent automation, and secure, dedicated AI infrastructure built for your business.</p>
+            <ul class="sf-acc">
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-12-0-generative-ai-custom-llms-rag-architecture-t" aria-expanded="false" aria-controls="sf-12-0-generative-ai-custom-llms-rag-architecture-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-5.4A8 8 0 1 1 21 12z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg></span>
+                <span class="sf-t">Generative AI, Custom LLMs &amp; RAG Architecture</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-12-0-generative-ai-custom-llms-rag-architecture-p" role="region" aria-labelledby="sf-12-0-generative-ai-custom-llms-rag-architecture-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Bring accurate, hallucination-free AI assistants into your daily workflows. Using Retrieval-Augmented Generation (RAG), we securely connect Large Language Models directly to your private documents, databases, and internal knowledge bases, enabling instant, verified answers for customer support and employee productivity without exposing proprietary data.</p>
+                    <p class="sf-full">We build AI assistants that answer using your own trusted content. With Retrieval-Augmented Generation, models are connected securely to your documents and knowledge bases.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Custom AI assistants and chatbots</li>
+              <li>RAG pipelines over private documents and databases</li>
+              <li>Fine-tuning and prompt design</li>
+              <li>Access controls to protect proprietary data</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Faster, source-based answers for customers and employees.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-12-1-dedicated-ai-infrastructure-private-deployment-t" aria-expanded="false" aria-controls="sf-12-1-dedicated-ai-infrastructure-private-deployment-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></span>
+                <span class="sf-t">Dedicated AI Infrastructure &amp; Private Deployment</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-12-1-dedicated-ai-infrastructure-private-deployment-p" role="region" aria-labelledby="sf-12-1-dedicated-ai-infrastructure-private-deployment-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Build a secure, high-performance foundation engineered for AI workloads. Whether on-premise, in a private cloud, or hybrid environments, we design and deploy dedicated GPU compute clusters, vector databases, and isolated model-hosting architectures that give you full control over data privacy, latency, and future scalability.</p>
+                    <p class="sf-full">We build the secure, high-performance foundation that AI workloads need. You keep full control over your data, speed and future growth.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>GPU compute cluster design and setup</li>
+              <li>Vector database deployment</li>
+              <li>On-premise, private cloud or hybrid hosting</li>
+              <li>Isolated model-hosting environments</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Strong data privacy, predictable performance and room to scale.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-12-2-predictive-analytics-forecasting-t" aria-expanded="false" aria-controls="sf-12-2-predictive-analytics-forecasting-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18M7 15l4-5 3 3 5-7"/></svg></span>
+                <span class="sf-t">Predictive Analytics &amp; Forecasting</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-12-2-predictive-analytics-forecasting-p" role="region" aria-labelledby="sf-12-2-predictive-analytics-forecasting-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Turn historical business data into accurate future projections. We build custom machine learning models that forecast customer demand, detect market trends, identify churn risks, and help leadership make proactive, data-backed decisions.</p>
+                    <p class="sf-full">We turn your historical data into reliable forecasts. Custom machine learning models help leaders plan with evidence instead of guesswork.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Demand and sales forecasting models</li>
+              <li>Market trend detection</li>
+              <li>Customer churn risk identification</li>
+              <li>Dashboards for decision makers</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Proactive, data-backed decisions and better planning.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-12-3-intelligent-process-automation-t" aria-expanded="false" aria-controls="sf-12-3-intelligent-process-automation-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></span>
+                <span class="sf-t">Intelligent Process Automation</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-12-3-intelligent-process-automation-p" role="region" aria-labelledby="sf-12-3-intelligent-process-automation-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Eliminate repetitive cognitive tasks across your operations. By combining AI with workflow automation, we build systems that automatically extract data from invoices, classify documents, route support tickets, and flag operational anomalies in real time.</p>
+                    <p class="sf-full">We combine AI with workflow automation to remove repetitive thinking tasks. Systems read, sort and route information without manual effort.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Automatic data extraction from invoices and forms</li>
+              <li>Document classification</li>
+              <li>Support ticket routing</li>
+              <li>Real-time detection of operational anomalies</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Lower processing time, fewer errors and staff freed for higher-value work.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-12-4-computer-vision-natural-language-processing-nlp-t" aria-expanded="false" aria-controls="sf-12-4-computer-vision-natural-language-processing-nlp-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                <span class="sf-t">Computer Vision &amp; Natural Language Processing (NLP)</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-12-4-computer-vision-natural-language-processing-nlp-p" role="region" aria-labelledby="sf-12-4-computer-vision-natural-language-processing-nlp-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Extract meaning from unstructured text, images, and video. From automated quality inspection and optical character recognition (OCR) to customer sentiment analysis, we deploy AI models that understand and process complex real-world data.</p>
+                    <p class="sf-full">We help you get meaning from text, images and video. Our models understand real-world, unstructured data at scale.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>Automated visual quality inspection</li>
+              <li>Optical character recognition (OCR)</li>
+              <li>Customer sentiment analysis</li>
+              <li>Text classification and entity extraction</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>Faster inspection and review, with consistent and objective results.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sf-item">
+              <button class="sf-trigger" type="button" id="sf-12-5-mlops-model-deployment-ongoing-optimization-t" aria-expanded="false" aria-controls="sf-12-5-mlops-model-deployment-ongoing-optimization-p">
+                <span class="sf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg></span>
+                <span class="sf-t">MLOps, Model Deployment &amp; Ongoing Optimization</span>
+                <span class="sf-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </button>
+              <div class="sf-panel" id="sf-12-5-mlops-model-deployment-ongoing-optimization-p" role="region" aria-labelledby="sf-12-5-mlops-model-deployment-ongoing-optimization-t">
+                <div class="sf-panel-in">
+                  <div class="sf-pbody">
+                    <p class="sf-lead">Keep your AI solutions accurate, secure, and reliable in production. We handle end-to-end data pipelines, continuous model retraining, performance monitoring, and infrastructure scaling so your AI adapts as your business grows.</p>
+                    <p class="sf-full">We keep your AI solutions accurate, secure and dependable once they are live. Models are monitored and improved as your data and business change.</p>
+                    <h5 class="sf-lbl">What we deliver</h5>
+                    <ul class="sf-deliver">
+              <li>End-to-end data pipelines</li>
+              <li>Model deployment and version control</li>
+              <li>Performance monitoring and scheduled retraining</li>
+              <li>Infrastructure scaling and support</li>
+                    </ul>
+                    <div class="sf-benefit"><span class="sf-lbl">Business benefits</span><p>AI that stays reliable and keeps improving over time.</p></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <div class="sf-art">
+            <svg viewBox="0 0 440 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI chip connected to a chatbot, analytics, database and vision">
+  <defs>
+    <linearGradient id="aiChip" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34557f"/><stop offset="1" stop-color="#12233c"/></linearGradient>
+    <linearGradient id="aiCore" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6c93c7"/><stop offset="1" stop-color="#3a6199"/></linearGradient>
+    <linearGradient id="aiDb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2c4970"/><stop offset="1" stop-color="#152841"/></linearGradient>
+  </defs>
+  <!-- platform -->
+  <ellipse cx="220" cy="262" rx="196" ry="40" fill="#e8edf4"/>
+  <ellipse cx="220" cy="262" rx="150" ry="28" fill="none" stroke="#bacadf" stroke-width="2" stroke-dasharray="5 6"/>
+  <!-- connection lines -->
+  <path d="M112 84 L154 132 M328 84 L286 132 M104 214 L154 188 M336 214 L286 188 M220 94 L220 52" stroke="#bccee5" stroke-width="3" stroke-dasharray="6 6" fill="none"/>
+  <circle cx="133" cy="108" r="5" fill="#6387b5"/><circle cx="307" cy="108" r="5" fill="#6387b5"/>
+  <circle cx="129" cy="201" r="5" fill="#6387b5"/><circle cx="311" cy="201" r="5" fill="#6387b5"/>
+  <!-- chip pins -->
+  <path d="M192 112v-18M220 112v-18M248 112v-18M192 208v18M220 208v18M248 208v18M168 134h-14M168 160h-14M168 186h-14M272 134h14M272 160h14M272 186h14" stroke="#6387b5" stroke-width="6" stroke-linecap="round"/>
+  <!-- chip -->
+  <rect x="168" y="112" width="104" height="96" rx="16" fill="url(#aiChip)"/>
+  <rect x="186" y="128" width="68" height="64" rx="12" fill="url(#aiCore)"/>
+  <text x="220" y="171" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700" fill="#fff">AI</text>
+  <!-- top node -->
+  <circle cx="220" cy="46" r="12" fill="#3d6293"/><circle cx="220" cy="46" r="5" fill="#e4ecf7"/>
+  <!-- chat bubble (LLM / RAG) -->
+  <g>
+    <rect x="28" y="38" width="88" height="56" rx="14" fill="#fff" stroke="#bccee5" stroke-width="3"/>
+    <path d="M48 94 l-6 16 20-16z" fill="#fff" stroke="#bccee5" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="46" y="48" width="52" height="7" rx="3.5" fill="#8fb1de"/>
+    <rect x="46" y="62" width="36" height="7" rx="3.5" fill="#c5d7ee"/>
+    <circle cx="52" cy="82" r="3.5" fill="#356eb8"/><circle cx="64" cy="82" r="3.5" fill="#356eb8" opacity=".7"/><circle cx="76" cy="82" r="3.5" fill="#356eb8" opacity=".4"/>
+  </g>
+  <!-- analytics card (predictive) -->
+  <g>
+    <rect x="324" y="34" width="92" height="64" rx="12" fill="#fff" stroke="#bccee5" stroke-width="3"/>
+    <rect x="338" y="66" width="10" height="20" rx="2" fill="#c5d7ee"/><rect x="354" y="56" width="10" height="30" rx="2" fill="#8fb1de"/><rect x="370" y="62" width="10" height="24" rx="2" fill="#8fb1de"/><rect x="386" y="48" width="10" height="38" rx="2" fill="#356eb8"/>
+    <polyline points="338,58 356,48 372,54 396,40" fill="none" stroke="#12233c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- vector database -->
+  <g>
+    <ellipse cx="74" cy="196" rx="34" ry="12" fill="#213b5d"/><path d="M40 196 v36 a34 12 0 0 0 68 0 v-36" fill="url(#aiDb)"/><ellipse cx="74" cy="196" rx="34" ry="12" fill="#375b89"/>
+    <ellipse cx="74" cy="214" rx="34" ry="12" fill="none" stroke="#6387b5" stroke-width="2"/>
+    <circle cx="74" cy="196" r="3" fill="#e4ecf7"/><circle cx="62" cy="199" r="2.2" fill="#e4ecf7" opacity=".7"/><circle cx="86" cy="199" r="2.2" fill="#e4ecf7" opacity=".7"/>
+  </g>
+  <!-- vision (eye) -->
+  <g>
+    <circle cx="366" cy="206" r="36" fill="#fff" stroke="#bccee5" stroke-width="3"/>
+    <path d="M338 206c8-14 18-20 28-20s20 6 28 20c-8 14-18 20-28 20s-20-6-28-20z" fill="#e6ebf4" stroke="#356eb8" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="366" cy="206" r="9" fill="#356eb8"/><circle cx="366" cy="206" r="3.6" fill="#fff"/>
+  </g>
+  <!-- sparkles -->
+  <path d="M404 140 l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#8fb1de"/>
+  <path d="M30 146 l2.4 6 6 2.4-6 2.4-2.4 6-2.4-6-6-2.4 6-2.4z" fill="#8fb1de"/>
+</svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== ABOUT: banner image + content ===== -->
+<section id="about">
+  <div class="section-banner">
+    <div class="section-banner-inner">
+      <img src="assets/banners/about.jpg" alt="About Vyapini Tech Services — our team and story" />
+    </div>
+  </div>
+
+  <div class="wrap split">
+       <div>
+      <span class="eyebrow">Who we are</span>
+      <h2 class="h-lg">10+ years of IT excellence</h2>
+      <p style="margin-top:16px;font-size:17px">Vyapini Tech Services Pvt. Ltd. is a premier pioneer in IT Consultancy &amp; Analytics Services, delivering technology solutions seamlessly fitted to our clients' unique business models. Backed by 10+ years of industry experience, our team empowers enterprises with innovative, reliable, and results-driven services.</p>
+      <p style="margin-top:16px;font-size:17px">From planning and implementing technology solutions to ensuring the highest level of service standards through managed services, helpdesk, and support — we cover every stage of your IT journey. We deliver what we commit we will, on time and on budget.</p>
+    </div>
+    <div>
+      <ul class="checklist">
+        <li><span class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Delivered on time and on budget, every engagement</li>
+        <li><span class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>10+ years of hands-on enterprise IT experience</li>
+        <li><span class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Client interests at the centre of every solution</li>
+        <li><span class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>End-to-end lifecycle, from planning through support</li>
+        <li><span class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Managed services, helpdesk and continuous monitoring</li>
+        <li><span class="ck"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Highest levels of service, responsiveness and dependability</li>
+      </ul>
+      <div class="stats" style="margin-top:40px">
+        <div class="stat"><div class="n">10<span>+</span></div><div class="l">Years of trust</div></div>
+        <div class="stat"><div class="n">50<span>+</span></div><div class="l">Happy clients</div></div>
+        <div class="stat"><div class="n">100<span>+</span></div><div class="l">Projects delivered</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US: banner image + content ===== -->
+<section id="why" class="sec-light">
+  <div class="section-banner">
+    <div class="section-banner-inner">
+      <img src="assets/banners/why.jpg" alt="Why partner with Vyapini — security, reliability, innovation" />
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why partner with us</span>
+      <h2 class="h-lg">Elevate your business with Vyapini</h2>
+      <p>From bespoke software to cloud transformation and AI-driven automation, we secure and scale your operations for the digital age.</p>
+    </div>
+    <div class="card-grid" style="grid-template-columns:repeat(4,1fr)">
+      <div class="fcard">
+        <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6z"/></svg></span>
+        <h4>End-to-end solutions</h4>
+        <p>A single, trusted partner for all your technology, security, and infrastructure needs.</p>
+      </div>
+      <div class="fcard">
+  <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c3 3 4 7 4 11l-4 3-4-3c0-4 1-8 4-11z"/><circle cx="12" cy="9" r="1.6"/><path d="M8 16l-2 5 3-1M16 16l2 5-3-1"/></svg></span>
+  <h4>Future-proof technology</h4>
+  <p>Leverage the latest advancements in AI and automation to stay ahead of the competition.</p>
+</div>
+      <div class="fcard">
+        <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+        <h4>Uncompromising security</h4>
+        <p>We embed security into the core of your software and cloud environments.</p>
+      </div>
+      <div class="fcard">
+        <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15l4-5 3 3 5-7"/></svg></span>
+        <h4>Scalable &amp; agile</h4>
+        <p>Flexible development methodologies designed to adapt as your business grows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS: banner image + content ===== -->
+<section id="process">
+  <div class="section-banner">
+    <div class="section-banner-inner">
+      <img src="assets/banners/process.jpg" alt="Our process — from discovery to optimisation" />
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Our engagement approach</span>
+      <h2 class="h-lg">How we deliver results</h2>
+      <p>A structured, transparent process from discovery to ongoing optimisation.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h4>Discover &amp; assess</h4><p>Thorough review of your current IT environment, business objectives, and pain points to establish a clear baseline and project scope.</p></div>
+      <div class="step"><div class="n">02</div><h4>Design &amp; plan</h4><p>Customised solution blueprint crafted, aligning technology choices precisely with your business requirements and budget.</p></div>
+      <div class="step"><div class="n">03</div><h4>Implement &amp; deploy</h4><p>Certified engineers execute the agreed solution with minimal disruption, adhering strictly to timelines and quality benchmarks.</p></div>
+      <div class="step"><div class="n">04</div><h4>Manage &amp; support</h4><p>Post-deployment managed services, helpdesk support, and continuous monitoring to maintain peak performance.</p></div>
+      <div class="step"><div class="n">05</div><h4>Review &amp; optimise</h4><p>Periodic reviews and optimisation cycles ensure your solution continues to evolve alongside your changing business needs.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARTNERS: banner image + content ===== -->
+<section id="partners" class="sec-light">
+  <div class="section-banner">
+    <div class="section-banner-inner">
+      <img src="assets/banners/partners.jpg" alt="Our technology partners and ecosystem" />
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Ecosystem</span>
+      <h2 class="h-lg">Built on trusted technology</h2>
+      <p>We maintain strategic partnerships with leading global technology vendors across cybersecurity, cloud platforms, enterprise IT management, and application ecosystems.</p>
+    </div>
+    <div class="marquee">
+      <div class="marquee-track rtl" id="partnerTrack">
+  <img src="assets/logos/Acronis.png" alt="Acronis" />
+  <img src="assets/logos/AWS.jfif" alt="AWS" />
+  <img src="assets/logos/Azure.jfif" alt="Azure" />
+  <img src="assets/logos/citrix.webp" alt="Citrix" />
+  <img src="assets/logos/emc.svg" alt="EMC" />
+  <img src="assets/logos/GCP.png" alt="GCP" />
+  <img src="assets/logos/hexnode.jpeg" alt="Hexnode" />
+  <img src="assets/logos/ManageEngine.png" alt="ManageEngine" />
+  <img src="assets/logos/Microsoft.webp" alt="Microsoft" />
+  <img src="assets/logos/Mongodb.png" alt="MongoDB" />
+  <img src="assets/logos/Nakivo.jfif" alt="Nakivo" />
+  <img src="assets/logos/odoo.png" alt="Odoo" />
+  <img src="assets/logos/opennebula.webp" alt="OpenNebula" />
+  <img src="assets/logos/opennms.webp" alt="OpenNMS" />
+  <img src="assets/logos/openstack.png" alt="OpenStack" />
+  <img src="assets/logos/redhat.png" alt="Red Hat" />
+  <img src="assets/logos/suse.png" alt="SUSE" />
+  <img src="assets/logos/tenable.png" alt="Tenable" />
+  <img src="assets/logos/vmware.webp" alt="VMware" />
+</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Get in touch</span>
+      <h2 class="h-lg">Ready to talk technology?</h2>
+      <p>Reach us directly, or send over a few details and our team will follow up.</p>
+    </div>
+    <div class="contact-grid">
+      <form class="cbox" id="quoteForm">
+  
+  <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+  <h3 class="h-sm">Request a free quote</h3>
+  <p style="margin-top:8px;font-size:15px">Share a few details and we'll route it to the right team.</p>
+  <div class="fgrid">
+    <div class="field"><label for="fname">Name</label><input id="fname" name="name" type="text" placeholder="Your full name" required /></div>
+    <div class="field"><label for="femail">Email</label><input id="femail" name="email" type="email" placeholder="you@company.com" required /></div>
+    <div class="field full"><label for="fphone">Phone</label><input id="fphone" name="phone" type="tel" placeholder="+91 98765 43210" /></div>
+    <div class="field full"><label for="fservice">Service interested in</label><input id="fservice" name="service" type="text" placeholder="e.g. Cloud Migration, DevOps, Information Security" /></div>
+    <div class="field full"><label for="fmsg">Message</label><textarea id="fmsg" name="message" placeholder="Tell us briefly about your project or challenge" required></textarea></div>
+    <div class="field full"><button type="submit" class="btn btn-primary btn-lg" style="width:100%">Send request</button></div>
+  </div>
+</form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div class="fbrand">
+        <img src="assets/vyapini-logo-transparent.png" alt="Vyapini Tech Services" />
+        <p>We'd be glad of an opportunity to provide the best breed of technology and services — and a mutually beneficial partnership.</p>
+        <div class="fsocial">
+          <a href="https://www.linkedin.com/company/vyapinitechservicespvtltd/home/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="fcol">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#why">Why us</a></li>
+          <li><a href="#process">Our process</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h5>Get in touch</h5>
+        <ul>
+          <li><a href="mailto:info@vyapini.in">info@vyapini.in</a></li>
+          <li><a href="tel:+919600971771">+91 96009 71771</a></li>
+          <li><a href="tel:+914223516660">+91 422 3516660</a></li>
+          <li><a href="#contact">Coimbatore – 641028</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <p>© 2026 Vyapini Tech Services Pvt Ltd. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+/* ---------- intro splash ---------- */
+(function(){
+  const intro = document.getElementById('intro');
+  if(!intro) return;
+
+  document.body.classList.add('intro-lock');
+
+  const HOLD_MS = 2600;
+  const FADE_MS = 900;
+
+  function hideIntro(){
+    intro.classList.add('hide');
+    document.body.classList.remove('intro-lock');
+    setTimeout(() => intro.remove(), FADE_MS);
+  }
+
+  if(sessionStorage.getItem('vyapiniIntroSeen')){
+    intro.remove();
+    document.body.classList.remove('intro-lock');
+  } else {
+    sessionStorage.setItem('vyapiniIntroSeen','1');
+    setTimeout(hideIntro, HOLD_MS);
+  }
+})();
+
+/* ---------- header: white at top, blue + white logo tab once scrolled ---------- */
+(function(){
+  const nav = document.getElementById('navOuter');
+  if(!nav) return;
+  const update = () => nav.classList.toggle('scrolled', window.pageYOffset > 10);
+  window.addEventListener('scroll', update, {passive:true});
+  update();
+})();
+
+// hero video: picks a wide or tall version for the screen, pause/play, reduced motion
+(function(){
+  const v=document.getElementById('heroVideo'),b=document.getElementById('vctl');
+  if(!v||!b) return;
+  const tall=window.matchMedia('(max-aspect-ratio: 5/4)');
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const sync=()=>{b.classList.toggle('paused',v.paused);b.setAttribute('aria-label',v.paused?'Play video':'Pause video');};
+  function pick(){
+    const src=tall.matches?'assets/vyapini-hero-mobile.mp4':'assets/vyapini-hero.mp4';
+    const poster=tall.matches?'assets/vyapini-hero-mobile-poster.jpg':'assets/vyapini-hero-poster.jpg';
+    if(v.dataset.cur===src) return;
+    v.dataset.cur=src; v.poster=poster; v.src=src; v.load();
+    if(!reduce){ const pr=v.play(); if(pr&&pr.catch) pr.catch(()=>{}); }
+    sync();
+  }
+  b.addEventListener('click',()=>{ v.paused?v.play():v.pause(); });
+  v.addEventListener('play',sync); v.addEventListener('pause',sync);
+  if(tall.addEventListener) tall.addEventListener('change',pick); else tall.addListener(pick);
+  pick();
+  if(reduce){ v.removeAttribute('autoplay'); v.pause(); }
+  sync();
+})();
+
+// scroll reveal: contents pop in as you scroll
+(function(){
+  window.__rvOk=true;
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const sel=['.trusted-lbl','.marquee','.section-banner','.sec-head','.pills','.fcard','#about .split > div',
+             '.stat','.checklist li','.step','.contact-grid > *','.fcols > *','.fbot'].join(',');
+  const els=Array.from(document.querySelectorAll(sel));
+  if(reduce||!('IntersectionObserver' in window)){ document.documentElement.classList.add('rv-fail'); return; }
+  const counters=new Map();
+  els.forEach(el=>{
+    el.classList.add('rv');
+    if(el.matches('.section-banner')) el.classList.add('rv-zoom');
+    const p=el.parentElement; const n=counters.get(p)||0; counters.set(p,n+1);
+    const cols=el.matches('.fcard')?3:(el.matches('.checklist li')?6:4);
+    el.style.setProperty('--d',((n%cols)*0.09)+'s');
+  });
+  const about=document.querySelectorAll('#about .split > div');
+  if(about[0]) about[0].classList.add('rv-left');
+  if(about[1]) about[1].classList.add('rv-right');
+  const done=el=>{ el.classList.remove('rv','in','rv-left','rv-right','rv-zoom'); el.style.removeProperty('--d'); };
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting) return;
+      const el=e.target; io.unobserve(el);
+      requestAnimationFrame(()=>el.classList.add('in'));
+      const d=parseFloat(el.style.getPropertyValue('--d'))||0;
+      setTimeout(()=>done(el),(d+1.0)*1000+200);
+    });
+  },{threshold:0.12,rootMargin:'0px 0px -6% 0px'});
+  els.forEach(el=>io.observe(el));
+})();
+
+// mobile menu
+const burger=document.getElementById('burger'),mm=document.getElementById('mobileMenu');
+burger.addEventListener('click',()=>mm.classList.toggle('open'));
+mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mm.classList.remove('open')));
+
+// smooth scroll (offset matches the taller header)
+document.querySelectorAll('a[href^="#"]').forEach(l=>{
+  l.addEventListener('click',e=>{
+    const id=l.getAttribute('href').slice(1);
+    const t=id?document.getElementById(id):null;
+    if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-132,behavior:'smooth'});}
+  });
+});
+
+// duplicate marquee content
+['customerTrack','partnerTrack'].forEach(id=>{
+  const t=document.getElementById(id);
+  if(t)t.innerHTML+=t.innerHTML;
+});
+
+/* ---------- Infinite sequential hero panel conveyor ---------- */
+(function(){
+  const panel = document.getElementById('panel');
+  const track = document.getElementById('panelTrack');
+  if(!panel || !track) return;
+
+  const originals = Array.from(track.querySelectorAll('.panel-row'));
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  originals.forEach(r=>{
+    const clone = r.cloneNode(true);
+    clone.classList.remove('active','on');
+    const b = clone.querySelector('.st'); if(b) b.textContent = 'Ready';
+    track.appendChild(clone);
+  });
+
+  let allRows = Array.from(track.querySelectorAll('.panel-row'));
+
+  if(reduce){
+    panel.classList.add('ready');
+    allRows.forEach(r=>{
+      r.style.opacity = '1';
+      r.style.transform = 'none';
+      r.classList.add('on');
+      const b=r.querySelector('.st'); if(b) b.textContent='Enabled';
+    });
+    return;
+  }
+
+  let ROW_H = 62, GAP = 14;
+  function measure(){
+    if(!allRows.length) return;
+    ROW_H = allRows[0].getBoundingClientRect().height || 62;
+    const cs = getComputedStyle(track);
+    GAP = parseFloat(cs.rowGap || cs.gap) || 14;
+  }
+  measure();
+  window.addEventListener('resize', measure);
+
+  const stepH = () => ROW_H + GAP;
+  const ADVANCE_MS = 900;
+  const PAUSE_MS   = 700;
+  const STARTUP_MS = 2000;
+
+  function centerSlot(){
+    const h = panel.clientHeight;
+    const visible = Math.max(3, Math.floor(h / stepH()));
+    return Math.floor(visible / 2);
+  }
+
+  let step = 0;
+  let running = false;
+  function wait(ms){ return new Promise(res=>setTimeout(res,ms)); }
+
+  function apply(){
+    track.style.transform = `translateY(${-step * stepH()}px)`;
+    const cs = centerSlot();
+    const centerIdx = step + cs;
+
+    allRows.forEach((r, i) => {
+      const badge = r.querySelector('.st');
+      if(i <= centerIdx){
+        if(!r.classList.contains('on')){
+          r.classList.add('on');
+          if(badge) badge.textContent = 'Enabled';
+        }
+      }
+    });
+
+    allRows.forEach((r, i) => r.classList.toggle('active', i === centerIdx));
+  }
+
+  async function loop(){
+    if(running) return;
+    running = true;
+    apply();
+    await wait(PAUSE_MS);
+
+    while(true){
+      step += 1;
+
+      if(step >= originals.length){
+        track.style.transition = 'none';
+        for(let i=0;i<originals.length;i++){
+          if(allRows[i] && allRows[i].parentNode) allRows[i].remove();
+        }
+        originals.forEach(r=>{
+          const clone = r.cloneNode(true);
+          clone.classList.remove('active','on');
+          const b = clone.querySelector('.st'); if(b) b.textContent='Ready';
+          track.appendChild(clone);
+        });
+        allRows = Array.from(track.querySelectorAll('.panel-row'));
+        step = 0;
+        track.style.transform = `translateY(0px)`;
+        void track.offsetHeight;
+        track.style.transition = '';
+        apply();
+        await wait(PAUSE_MS);
+        continue;
+      }
+
+      apply();
+      await wait(ADVANCE_MS + PAUSE_MS);
+    }
+  }
+
+  setTimeout(()=>{
+    panel.classList.add('ready');
+    const staggerTotal = 0.6 * 1000 + 800;
+    setTimeout(loop, staggerTotal);
+  }, STARTUP_MS);
+})();
+
+// stat boxes: click to toggle blue
+document.querySelectorAll('.stat').forEach(el=>{
+  el.setAttribute('tabindex','0');
+  el.addEventListener('click',()=>el.classList.toggle('is-active'));
+  el.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); el.classList.toggle('is-active'); } });
+});
+
+// why-us cards & process steps: click/tap to toggle blue
+document.querySelectorAll('#why .fcard, #process .step').forEach(el=>{
+  el.setAttribute('tabindex','0');
+  el.addEventListener('click',()=>el.classList.toggle('is-active'));
+  el.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); el.classList.toggle('is-active'); } });
+});
+
+// services (by technology / by competency): click a service to open its details, one open per group
+document.querySelectorAll('.sf-acc').forEach(acc=>{
+  const items = Array.from(acc.querySelectorAll('.sf-item'));
+  items.forEach(item=>{
+    const btn = item.querySelector('.sf-trigger');
+    btn.addEventListener('click',()=>{
+      const willOpen = !item.classList.contains('open');
+      items.forEach(i=>{
+        i.classList.remove('open');
+        i.querySelector('.sf-trigger').setAttribute('aria-expanded','false');
+      });
+      if(willOpen){
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+});
+
+
+// form -> EmailJS (company mail + customer auto-reply)
+emailjs.init({publicKey:'YOUR_PUBLIC_KEY'});
+
+const form=document.getElementById('quoteForm'),toast=document.getElementById('toast');
+function showToast(msg){
+  toast.textContent=msg;
+  toast.classList.add('show');
+  setTimeout(()=>toast.classList.remove('show'),4000);
+}
+form.addEventListener('submit',async e=>{
+  e.preventDefault();
+  if(form.botcheck && form.botcheck.checked) return;
+
+  const btn=form.querySelector('button[type="submit"]');
+  const label=btn.textContent;
+  btn.disabled=true;btn.textContent='Sending...';
+
+  const params={
+    name:form.name.value,
+    email:form.email.value,
+    phone:form.phone.value,
+    service:form.service.value,
+    message:form.message.value
+  };
+
+  try{
+    await emailjs.send('YOUR_SERVICE_ID','YOUR_COMPANY_TEMPLATE_ID',params);
+    try{ await emailjs.send('YOUR_SERVICE_ID','YOUR_AUTOREPLY_TEMPLATE_ID',params); }catch(_){}
+    showToast("Thanks — your request has been sent. We'll be in touch shortly.");
+    form.reset();
+  }catch(err){
+    showToast("Sorry, something went wrong. Please email info@vyapini.in");
+  }
+  btn.disabled=false;btn.textContent=label;
+});
+/* ---------- Service Filter (All / Technology / Competency) ---------- */
+(function(){
+  const pills = document.querySelectorAll('#pills button');
+  const blocks = {
+    all: document.getElementById('svc-all'),
+    technology: document.getElementById('svc-technology'),
+    competency: document.getElementById('svc-competency')
+  };
+  if(!pills.length || !blocks.all) return;
+
+  pills.forEach(p => {
+    p.addEventListener('click', () => {
+      pills.forEach(btn => btn.classList.remove('active'));
+      p.classList.add('active');
+
+      const filter = p.dataset.filter;
+      Object.keys(blocks).forEach(key => {
+        if(blocks[key]) {
+          blocks[key].classList.toggle('active', key === filter);
+        }
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
